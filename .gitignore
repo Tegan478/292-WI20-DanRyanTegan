@@ -58,3 +58,9 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+
+CS292-Template/Library/
+
+CS292-Template/Logs/
+
+.DS_Store
