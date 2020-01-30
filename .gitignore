@@ -24,6 +24,16 @@
 
 # Visual Studio cache directory
 .vs/
+Generated\ Files/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUnit
+*.VisualState.xml
+TestResult.xml
+nunit-*was .xml
 
 # Gradle cache directory
 .gradle/
