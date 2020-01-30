@@ -25,6 +25,11 @@
 # Visual Studio cache directory
 .vs/
 
+# NUnit
+*.VisualState.xml
+TestResult.xml
+nunit-*was .xml
+
 # Gradle cache directory
 .gradle/
 
