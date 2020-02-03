@@ -242,6 +242,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScoreHud
       objectReference: {fileID: 0}
+    - target: {fileID: 6333368570831046427, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: m_Name
+      value: Panel_HUDScoreandLife
+      objectReference: {fileID: 0}
     - target: {fileID: 6361078404877972614, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
       propertyPath: m_Name
