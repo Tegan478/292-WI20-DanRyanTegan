@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Blade : MonoBehaviour
 {
-    bool cutting = true;
+    bool cutting = false;
     Rigidbody2D rb;
     Camera cam;
 
