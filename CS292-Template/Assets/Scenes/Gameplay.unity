@@ -132,10 +132,20 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 281872458266465547, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 863353774204171728, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
       propertyPath: m_BlockingMask.m_Bits
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260280147013124500, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2925737577977536814, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
@@ -146,6 +156,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 169.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2987956473110915987, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3826151422071592298, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
@@ -336,6 +351,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8529303011674366370, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8596682068412559218, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
