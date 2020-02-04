@@ -8,6 +8,9 @@ public class Blade : MonoBehaviour
     Rigidbody2D rb;
     Camera cam;
 
+    public GameObject bladeTrail;
+    private GameObject currBladeTrail;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,11 +44,14 @@ public class Blade : MonoBehaviour
     void StartCut()
     {
         cutting = true;
+        currBladeTrail = Instantiate(bladeTrail, transform);
     }
 
     void StopCut()
     {
         cutting = false;
+        currBladeTrail.transform.SetParent (null);
+        Destroy(currBladeTrail, 2f);
     }
 }
 
