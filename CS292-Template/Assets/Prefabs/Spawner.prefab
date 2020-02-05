@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5307911044377593536}
   - component: {fileID: 4984138038401630329}
-  m_Layer: 5
+  - component: {fileID: 8507984852391191136}
+  m_Layer: 9
   m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,13 +52,6 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   items:
   - {fileID: 2340205009080827151, guid: 6b495cd906e740a46a7f0cbc0f49e4cd, type: 3}
   - {fileID: 6133766110847364129, guid: a3cc892c301d59d45b256cc2e88781a1, type: 3}
@@ -72,3 +66,11 @@ MonoBehaviour:
   startTimeBtwSpawns: 0.5
   minTimeBtwSpawns: 0.5
   decrease: 0.1
+--- !u!222 &8507984852391191136
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2669970004821343348}
+  m_CullTransparentMesh: 0
