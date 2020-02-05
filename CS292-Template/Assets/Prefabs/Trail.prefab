@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5649453664931991745}
   - component: {fileID: 3072405055547668462}
+  - component: {fileID: 7980765440523002665}
   m_Layer: 5
   m_Name: Trail
   m_TagString: Untagged
@@ -132,3 +133,11 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!222 &7980765440523002665
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2926237074137836772}
+  m_CullTransparentMesh: 0
