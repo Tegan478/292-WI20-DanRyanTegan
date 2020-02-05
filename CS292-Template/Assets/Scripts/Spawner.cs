@@ -22,7 +22,7 @@ public class Spawner : MonoBehaviour
             Transform randomSpawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
             GameObject randomItem = items[Random.Range(0, items.Length)];
 
-            Instantiate(randomItem, randomSpawnPoint.position, Quaternion.identity);
+            Instantiate(randomItem, randomSpawnPoint.position, Quaternion.Euler(0, 180, 0));
 
             if (startTimeBtwSpawns > minTimeBtwSpawns)
             {
