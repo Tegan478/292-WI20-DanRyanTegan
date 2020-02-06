@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 9005292766856367345}
   - component: {fileID: 3598597078367800593}
   - component: {fileID: 3801995107104333258}
+  - component: {fileID: 8293536934498242495}
   m_Layer: 5
   m_Name: Button_ViewLeaderBoard
   m_TagString: Untagged
@@ -195,3 +196,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8293536934498242495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5943697423207401697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bba4752a8873a448b7fe7814e8dfeb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelToOpen: {fileID: 0}
+  currPanel: {fileID: 0}
