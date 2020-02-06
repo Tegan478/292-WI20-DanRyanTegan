@@ -626,6 +626,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1577110997968587205, guid: ef38056f1c8c8ba419dff91858e6f7fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1480166782938276977}
+    - target: {fileID: 1577110997968587205, guid: ef38056f1c8c8ba419dff91858e6f7fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5043144719564924971, guid: ef38056f1c8c8ba419dff91858e6f7fc,
         type: 3}
       propertyPath: m_Name
@@ -633,6 +643,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef38056f1c8c8ba419dff91858e6f7fc, type: 3}
+--- !u!1 &1480166782938276977 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5043144719564924971, guid: ef38056f1c8c8ba419dff91858e6f7fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 5869952555950509146}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &6661885752504228669 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 938305031366743911, guid: ef38056f1c8c8ba419dff91858e6f7fc,
