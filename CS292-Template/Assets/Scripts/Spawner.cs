@@ -21,7 +21,7 @@ public class Spawner : MonoBehaviour
             Transform randomSpawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
             GameObject randomItem = items[Random.Range(0, items.Length)];
 
-            Instantiate(randomItem, randomSpawnPoint.position, randomSpawnPoint.rotation);
+            Instantiate(randomItem, new Vector3(randomSpawnPoint.position.x, randomSpawnPoint.position.y, 0), randomSpawnPoint.rotation);
 
             if (startTimeBtwSpawns > minTimeBtwSpawns)
             {

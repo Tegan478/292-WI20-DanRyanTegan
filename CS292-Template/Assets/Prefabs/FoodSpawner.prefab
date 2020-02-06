@@ -47,8 +47,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   items:
-  - {fileID: 2340205009080827151, guid: 6b495cd906e740a46a7f0cbc0f49e4cd, type: 3}
-  - {fileID: 1180261487235149263, guid: c68d6f35445c8e449ac2d2b449aa17fa, type: 3}
   - {fileID: 2480568352673642279, guid: f53ce792232537e4ab0f0ede2b2cb2e6, type: 3}
   bomb:
   - {fileID: 1917597342697127866, guid: 1280c4a565277d54e847d9097c1b2dff, type: 3}
