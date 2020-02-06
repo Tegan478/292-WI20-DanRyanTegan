@@ -516,11 +516,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6423180434125306659}
     m_Modifications:
-    - target: {fileID: 584278222238710500, guid: ef38056f1c8c8ba419dff91858e6f7fc,
-        type: 3}
-      propertyPath: currPanel
-      value: 
-      objectReference: {fileID: 6423180434125306658}
     - target: {fileID: 938305031366743911, guid: ef38056f1c8c8ba419dff91858e6f7fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -625,6 +620,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577110997968587205, guid: ef38056f1c8c8ba419dff91858e6f7fc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1577110997968587205, guid: ef38056f1c8c8ba419dff91858e6f7fc,
         type: 3}

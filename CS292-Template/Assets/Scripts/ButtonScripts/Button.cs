@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SettingsButton : MonoBehaviour
+public class Button : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject Panel;
+    public GameObject panelToOpen;
     public GameObject currPanel;
 
     public void OpenPanel()
     {
-        print("settings pressed");
-        if (Panel != null)
+        print("button pressed");
+        if (panelToOpen != null)
         {
-            Panel.SetActive(true);
+            panelToOpen.SetActive(true);
         }
         currPanel.SetActive(false);
     }

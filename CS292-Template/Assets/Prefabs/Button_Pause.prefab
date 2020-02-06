@@ -84,8 +84,8 @@ GameObject:
   - component: {fileID: 8799058170168491916}
   - component: {fileID: 5461611571785563050}
   - component: {fileID: 4302192244162770344}
-  - component: {fileID: 4598835118752122374}
   - component: {fileID: 4884541081158843971}
+  - component: {fileID: 4193303675144652974}
   m_Layer: 5
   m_Name: Button_Pause
   m_TagString: Untagged
@@ -149,22 +149,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4598835118752122374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8565405104633054631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 945611cef39668b4381ee6b8de67757a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PanelToOpen: {fileID: 8329591141014628799, guid: b83ac6a356c3c2c43828e70d7324f139,
-    type: 3}
-  CurrPanel: {fileID: 267688146487056246, guid: ba31b5e58c73b79409f37a24f10b32fe,
-    type: 3}
 --- !u!114 &4884541081158843971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,7 +192,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4598835118752122374}
+      - m_Target: {fileID: 0}
         m_MethodName: OpenPanel
         m_Mode: 1
         m_Arguments:
@@ -219,3 +203,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4193303675144652974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8565405104633054631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bba4752a8873a448b7fe7814e8dfeb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelToOpen: {fileID: 0}
+  currPanel: {fileID: 0}
