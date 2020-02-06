@@ -5,7 +5,7 @@ using UnityEngine;
 public class Food : MonoBehaviour
 {
     public GameObject itemPrefab;
-    public float force = 15f;
+    public float force = 70f;
     Rigidbody2D rb;
 
     // Start is called before the first frame update
