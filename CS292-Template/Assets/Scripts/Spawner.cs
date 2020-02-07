@@ -21,13 +21,7 @@ public class Spawner : MonoBehaviour
             Transform randomSpawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
             GameObject randomItem = items[Random.Range(0, items.Length)];
 
-            Instantiate(randomItem, randomSpawnPoint.position, Quaternion.identity);
-
-            Rigidbody2D rigidFood = Instantiate(randomItem.GetComponent<Rigidbody2D>());
-            rigidFood.transform.position = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
-            rigidFood.transform.localScale = new Vector2(1.0f, 1.0f);
-            rigidFood.AddForce(rigidFood.transform.forward * 30.0f);
-            rigidFood.velocity = Vector3.up * 70;
+            Instantiate(randomItem, new Vector3(randomSpawnPoint.position.x, randomSpawnPoint.position.y, 0), randomSpawnPoint.rotation);
 
             if (startTimeBtwSpawns > minTimeBtwSpawns)
             {

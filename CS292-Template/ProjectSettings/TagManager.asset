@@ -15,9 +15,9 @@ TagManager:
   - 
   - 
   - BackGround
-  - 
-  - 
-  - 
+  - Midground
+  - Foreground
+  - UI
   - 
   - 
   - 
@@ -47,4 +47,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 1827494861
+    locked: 0
+  - name: GameObject
+    uniqueID: 3840326991
     locked: 0

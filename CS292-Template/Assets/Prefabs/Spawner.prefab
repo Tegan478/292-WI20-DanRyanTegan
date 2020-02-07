@@ -63,8 +63,8 @@ MonoBehaviour:
   - {fileID: 2480568352673642279, guid: f53ce792232537e4ab0f0ede2b2cb2e6, type: 3}
   bomb:
   - {fileID: 1917597342697127866, guid: 1280c4a565277d54e847d9097c1b2dff, type: 3}
-  startTimeBtwSpawns: 0.5
-  minTimeBtwSpawns: 0.5
+  startTimeBtwSpawns: 2
+  minTimeBtwSpawns: 2
   decrease: 0.1
 --- !u!222 &8507984852391191136
 CanvasRenderer:
