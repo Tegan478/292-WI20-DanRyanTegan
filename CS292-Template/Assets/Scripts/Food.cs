@@ -4,20 +4,28 @@ using UnityEngine;
 
 public class Food : MonoBehaviour
 {
-    public GameObject itemPrefab;
-    public float force = 70f;
-    Rigidbody2D rb;
+	public GameObject slicedPrefab;
+	private float startForce = 17f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        rb.AddForce(transform.up * force, ForceMode2D.Impulse);
-    }
+	Rigidbody2D rb;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	void Start()
+	{
+		rb = GetComponent<Rigidbody2D>();
+		rb.AddForce(transform.up * startForce, ForceMode2D.Impulse);
+	}
+
+	void OnTriggerEnter2D(Collider2D col)
+	{
+		if (col.CompareTag("Blade"))
+		{
+			Vector3 direction = (col.transform.position - transform.position).normalized;
+
+			Quaternion rotation = Quaternion.LookRotation(direction);
+
+			GameObject slicedFruit = Instantiate(slicedPrefab, transform.position, rotation);
+			Destroy(slicedFruit, 3f);
+			Destroy(gameObject);
+		}
+	}
 }
