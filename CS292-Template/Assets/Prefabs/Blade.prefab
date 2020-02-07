@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4077210522401784151}
   - component: {fileID: 1033073047041468982}
   - component: {fileID: 2593823445991673989}
+  - component: {fileID: 5152066946825173015}
   m_Layer: 5
   m_Name: Blade
   m_TagString: Blade
@@ -71,7 +72,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80bad2f63e6d48a4bb25ce905360cb21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bladeTrail: {fileID: 0}
+  bladeTrailPrefab: {fileID: 2926237074137836772, guid: 0072f0c699b96bc4e8950057996c1a7a,
+    type: 3}
+  minCuttingVelocity: 0.001
 --- !u!222 &2593823445991673989
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -80,3 +83,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3890791011928439284}
   m_CullTransparentMesh: 0
+--- !u!58 &5152066946825173015
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890791011928439284}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.88462406, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.38472408

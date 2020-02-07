@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -1189993694611135099}
   - component: {fileID: 5237626105787546763}
   - component: {fileID: 2609501546500143752}
+  - component: {fileID: 6349655087657333930}
   m_Layer: 9
   m_Name: egg
   m_TagString: Untagged
@@ -27,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5823514972197326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.03, y: 0.45, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalPosition: {x: -4.135, y: -5.476, z: 0}
+  m_LocalScale: {x: 0.13544999, y: 0.13544999, z: 0.13544999}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -45,8 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6070de8bd9a738e48b2b13a237d6a6de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 5823514972197326}
-  force: 15
+  slicedPrefab: {fileID: 7023690151859562464, guid: 6e2f868fba4494d4188904e8f17c5eef,
+    type: 3}
 --- !u!212 &5237626105787546763
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -108,12 +109,28 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &6349655087657333930
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5823514972197326}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 8.25

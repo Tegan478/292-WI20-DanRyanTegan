@@ -4,55 +4,78 @@ using UnityEngine;
 
 public class Blade : MonoBehaviour
 {
-    bool cutting = false;
-    Rigidbody2D rb;
-    Camera cam;
+	public GameObject bladeTrailPrefab;
+	public float minCuttingVelocity = .001f;
 
-    public GameObject bladeTrail;
-    private GameObject currBladeTrail;
+	bool isCutting = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        cam = Camera.main;
-    }
+	Vector2 previousPosition;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButtonDown (0))
-        {
-            StartCut();
-        } else if (Input.GetMouseButtonUp (0))
-        {
-            StopCut();
-        }
+	GameObject currentBladeTrail;
 
-        if (cutting)
-        {
-            UpdateCut();
-        }
-    }
+	Rigidbody2D rb;
+	Camera cam;
+	CircleCollider2D circleCollider;
 
-    void UpdateCut()
-    {
-        Vector2 newPos = cam.ScreenToWorldPoint(Input.mousePosition);
-        rb.position = newPos;
-    }
+	void Start()
+	{
+		cam = Camera.main;
+		rb = GetComponent<Rigidbody2D>();
+		circleCollider = GetComponent<CircleCollider2D>();
+	}
 
-    void StartCut()
-    {
-        cutting = true;
-        currBladeTrail = Instantiate(bladeTrail, transform);
-    }
+	// Update is called once per frame
+	void Update()
+	{
+		if (Input.GetMouseButtonDown(0))
+		{
+			StartCutting();
+		}
+		else if (Input.GetMouseButtonUp(0))
+		{
+			StopCutting();
+		}
 
-    void StopCut()
-    {
-        cutting = false;
-        currBladeTrail.transform.SetParent (null);
-        Destroy(currBladeTrail, 2f);
-    }
+		if (isCutting)
+		{
+			UpdateCut();
+		}
+
+	}
+
+	void UpdateCut()
+	{
+		Vector2 newPosition = cam.ScreenToWorldPoint(Input.mousePosition);
+		rb.position = newPosition;
+
+		float velocity = (newPosition - previousPosition).magnitude * Time.deltaTime;
+		if (velocity > minCuttingVelocity)
+		{
+			circleCollider.enabled = true;
+		}
+		else
+		{
+			circleCollider.enabled = false;
+		}
+
+		previousPosition = newPosition;
+	}
+
+	void StartCutting()
+	{
+		isCutting = true;
+		currentBladeTrail = Instantiate(bladeTrailPrefab, transform);
+		previousPosition = cam.ScreenToWorldPoint(Input.mousePosition);
+		circleCollider.enabled = false;
+	}
+
+	void StopCutting()
+	{
+		isCutting = false;
+		currentBladeTrail.transform.SetParent(null);
+		Destroy(currentBladeTrail, 2f);
+		circleCollider.enabled = false;
+	}
 }
 
 //https://youtu.be/nzeaFOkuHJc?t=490
