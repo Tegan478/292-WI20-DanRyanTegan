@@ -157,6 +157,26 @@ PrefabInstance:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 316072192567393391, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 584220677620533073, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 584220677620533073, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 584220677620533073, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -308.77777
+      objectReference: {fileID: 0}
     - target: {fileID: 687512731157844060, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -860,6 +880,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 5073623306813614676, guid: 9dbd1123a17f1564c80983377bb615cf, type: 3}
     - {fileID: 6245670188449163488, guid: 9dbd1123a17f1564c80983377bb615cf, type: 3}
+    - {fileID: 4019328554544420137, guid: 9dbd1123a17f1564c80983377bb615cf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9dbd1123a17f1564c80983377bb615cf, type: 3}
 --- !u!1 &472609595
 GameObject:

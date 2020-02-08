@@ -8,6 +8,9 @@ public class ScoreControl : MonoBehaviour
     public GameObject life2;
     public GameObject life3;
 
+	public GameObject panelToOpen;
+	public GameObject currPanel;
+
 	// Start is called before the first frame update
 	void OnTriggerEnter2D(Collider2D col)
 	{
@@ -32,8 +35,18 @@ public class ScoreControl : MonoBehaviour
 			}
 			else
 			{
-				print("Game Over");
+				OpenPanel();
 			}
 		}
+	}
+
+	public void OpenPanel()
+	{
+		//print("button pressed");
+		if (panelToOpen != null)
+		{
+			panelToOpen.SetActive(true);
+		}
+		currPanel.SetActive(false);
 	}
 }
