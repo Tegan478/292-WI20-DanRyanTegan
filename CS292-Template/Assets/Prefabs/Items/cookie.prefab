@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6070de8bd9a738e48b2b13a237d6a6de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slicedPrefab: {fileID: 1563661970076588175, guid: 47fbd400d2c47af47a647393a8410c6a,
+  slicedPrefab: {fileID: 7508915679119373750, guid: 544ae407d57860749b14604d09d9dc40,
     type: 3}
 --- !u!50 &3623621203539589415
 Rigidbody2D:

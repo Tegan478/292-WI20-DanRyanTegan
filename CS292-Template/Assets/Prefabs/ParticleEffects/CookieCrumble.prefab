@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 686861870294327596}
   - component: {fileID: 8512586623985400859}
   m_Layer: 5
-  m_Name: ChipCrunch 1
+  m_Name: CookieCrumble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1543,13 +1543,11 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: -4176725678845612582, guid: f0d900e414b8ff54b9a2393eeb071ab9,
+    - sprite: {fileID: 3939919792545283350, guid: 79a2fd7104fbabb4cb4a46eb2f16ae16,
         type: 3}
-    - sprite: {fileID: 1716759442800028879, guid: f0d900e414b8ff54b9a2393eeb071ab9,
+    - sprite: {fileID: -70739396087891624, guid: 79a2fd7104fbabb4cb4a46eb2f16ae16,
         type: 3}
-    - sprite: {fileID: -203751169231210452, guid: f0d900e414b8ff54b9a2393eeb071ab9,
-        type: 3}
-    - sprite: {fileID: 7601512629390676947, guid: f0d900e414b8ff54b9a2393eeb071ab9,
+    - sprite: {fileID: -888083154717811487, guid: 79a2fd7104fbabb4cb4a46eb2f16ae16,
         type: 3}
     flipU: 0
     flipV: 0
