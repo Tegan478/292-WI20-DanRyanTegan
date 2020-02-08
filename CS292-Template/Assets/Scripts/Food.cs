@@ -9,10 +9,6 @@ public class Food : MonoBehaviour
 
 	Rigidbody2D rb;
 
-	public GameObject life1;
-	public GameObject life2;
-	public GameObject life3;
-
 	void Start()
 	{
 		rb = GetComponent<Rigidbody2D>();
@@ -29,24 +25,6 @@ public class Food : MonoBehaviour
 
 			GameObject slicedFruit = Instantiate(slicedPrefab, transform.position, rotation);
 			Destroy(slicedFruit, 3f);
-			Destroy(gameObject);
-		}
-		if (col.CompareTag("OffScreen"))
-		{
-			Destroy(gameObject);
-			if (life3.activeSelf)
-			{
-				life3.SetActive(false);
-			} else if (life2.activeSelf)
-			{
-				life2.SetActive(false);
-			} else if (life2.activeSelf)
-			{
-				life1.SetActive(false);
-			} else
-			{
-				print("Game Over");
-			}
 		}
 	}
 }

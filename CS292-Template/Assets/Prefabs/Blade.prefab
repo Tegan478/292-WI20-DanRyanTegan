@@ -75,6 +75,7 @@ MonoBehaviour:
   bladeTrailPrefab: {fileID: 2926237074137836772, guid: 0072f0c699b96bc4e8950057996c1a7a,
     type: 3}
   minCuttingVelocity: 0.001
+  score: {fileID: 0}
 --- !u!222 &2593823445991673989
 CanvasRenderer:
   m_ObjectHideFlags: 0

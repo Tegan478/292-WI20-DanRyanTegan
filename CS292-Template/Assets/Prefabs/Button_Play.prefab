@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 938305031366743911}
   - component: {fileID: 5046086929351452936}
+  - component: {fileID: 6578717806498960070}
   - component: {fileID: 1198844172878132144}
   - component: {fileID: 1577110997968587205}
   - component: {fileID: 5907394356619219213}
@@ -48,6 +49,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5043144719564924971}
   m_CullTransparentMesh: 0
+--- !u!114 &6578717806498960070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5043144719564924971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63d4a30a6c677254fb88a3cc5536e098, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life1: {fileID: 0}
+  life2: {fileID: 0}
+  life3: {fileID: 0}
+  score: {fileID: 0}
 --- !u!114 &1198844172878132144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,6 +161,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelToOpen: {fileID: 0}
   currPanel: {fileID: 0}
+  isPlay: 0
+  life1: {fileID: 0}
+  life2: {fileID: 0}
+  life3: {fileID: 0}
 --- !u!1 &5502914167919448655
 GameObject:
   m_ObjectHideFlags: 0

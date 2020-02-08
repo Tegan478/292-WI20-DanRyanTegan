@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Blade : MonoBehaviour
 {
 	public GameObject bladeTrailPrefab;
 	public float minCuttingVelocity = .001f;
+	public Text score;
+
+	int count = 0;
 
 	bool isCutting = false;
 
@@ -41,6 +45,16 @@ public class Blade : MonoBehaviour
 			UpdateCut();
 		}
 
+	}
+
+	void OnTriggerEnter2D(Collider2D col)
+	{
+		if (col.CompareTag("Food"))
+		{
+			count += 1; //potentially col.value?
+			score.text = count.ToString();
+			Destroy(col.gameObject);
+		}
 	}
 
 	void UpdateCut()
