@@ -6,13 +6,17 @@ public class Spawner : MonoBehaviour
 {
     public Transform[] spawnPoints;
     public GameObject[] items;
-    public GameObject[] bomb;
+    public GameObject bomb;
 
     private float timeBtwSpawns;
     public float startTimeBtwSpawns;
-
     public float minTimeBtwSpawns;
     public float decrease;
+
+    private float bombTimeMin = 4f;
+    private float bombTimeStart = 5;
+    private float newBomb = 3f;
+    private float decBomb = .5f;
 
     void Update()
     {
@@ -33,6 +37,25 @@ public class Spawner : MonoBehaviour
         else
         {
             timeBtwSpawns -= Time.deltaTime;
+        }
+
+        if (newBomb <= 0)
+        {
+            Transform randomSpawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+
+            Instantiate(bomb, new Vector3(randomSpawnPoint.position.x, randomSpawnPoint.position.y, 0), randomSpawnPoint.rotation);
+            
+            if (bombTimeStart > bombTimeMin)
+            {
+                bombTimeStart -= decBomb;
+            }
+
+            newBomb = bombTimeStart;
+
+        }
+        else
+        {
+            newBomb -= Time.deltaTime;
         }
     }
 }
