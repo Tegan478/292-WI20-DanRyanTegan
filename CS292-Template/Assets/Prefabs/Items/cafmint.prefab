@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4569654672355104366}
   m_Layer: 9
   m_Name: cafmint
-  m_TagString: Untagged
+  m_TagString: Bomb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1917597342697127866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.12, y: 1.56, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -7.72, y: -4.04, z: 0}
+  m_LocalScale: {x: 0.12, y: 0.12, z: 0.12}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -116,7 +116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6070de8bd9a738e48b2b13a237d6a6de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slicedPrefab: {fileID: 0}
+  slicedPrefab: {fileID: 2124541222306880411, guid: 3903fdaa7c7249144917b88c5c5274d7,
+    type: 3}
 --- !u!58 &4569654672355104366
 CircleCollider2D:
   m_ObjectHideFlags: 0
