@@ -586,6 +586,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1917597342697127866, guid: 1280c4a565277d54e847d9097c1b2dff,
         type: 3}
+    - target: {fileID: 7644730011672605378, guid: 780ce02e3eb954648a552a86417eb1e0,
+        type: 3}
+      propertyPath: minTimeBtwSpawns
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7644730011672605378, guid: 780ce02e3eb954648a552a86417eb1e0,
+        type: 3}
+      propertyPath: startTimeBtwSpawns
+      value: 1.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 780ce02e3eb954648a552a86417eb1e0, type: 3}
 --- !u!4 &1704602991830348685 stripped
@@ -743,26 +753,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 216850759532340132}
     m_Modifications:
-    - target: {fileID: 2518351159221632191, guid: 818488ba0dd7a7c45bef358ab4d70624,
-        type: 3}
-      propertyPath: life1
-      value: 
-      objectReference: {fileID: 3648139466469252259}
-    - target: {fileID: 2518351159221632191, guid: 818488ba0dd7a7c45bef358ab4d70624,
-        type: 3}
-      propertyPath: life2
-      value: 
-      objectReference: {fileID: 8282440947127433949}
-    - target: {fileID: 2518351159221632191, guid: 818488ba0dd7a7c45bef358ab4d70624,
-        type: 3}
-      propertyPath: life3
-      value: 
-      objectReference: {fileID: 8334503562357807859}
-    - target: {fileID: 2518351159221632191, guid: 818488ba0dd7a7c45bef358ab4d70624,
-        type: 3}
-      propertyPath: score
-      value: 
-      objectReference: {fileID: 2854158207364259383}
     - target: {fileID: 4002887721545137402, guid: 818488ba0dd7a7c45bef358ab4d70624,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -835,12 +825,6 @@ PrefabInstance:
       objectReference: {fileID: 8334503562357807859}
     - target: {fileID: 4246599547520080055, guid: 818488ba0dd7a7c45bef358ab4d70624,
         type: 3}
-      propertyPath: panelToOpen
-      value: 
-      objectReference: {fileID: 4085058756500262653, guid: 938ce3f7937f5b24f99b9b98b71495b4,
-        type: 3}
-    - target: {fileID: 4246599547520080055, guid: 818488ba0dd7a7c45bef358ab4d70624,
-        type: 3}
       propertyPath: currPanel
       value: 
       objectReference: {fileID: 267688146487056246}
@@ -849,8 +833,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: OffScreen
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2518351159221632191, guid: 818488ba0dd7a7c45bef358ab4d70624, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 818488ba0dd7a7c45bef358ab4d70624, type: 3}
 --- !u!4 &8402651242475529395 stripped
 Transform:

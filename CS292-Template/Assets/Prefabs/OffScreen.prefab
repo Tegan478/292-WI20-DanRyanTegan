@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4002887721545137402}
   - component: {fileID: 4246599547520080055}
-  - component: {fileID: 2518351159221632191}
   - component: {fileID: 4117424133707889714}
   - component: {fileID: 3034614356098585096}
   m_Layer: 0
@@ -49,21 +48,9 @@ MonoBehaviour:
   life1: {fileID: 0}
   life2: {fileID: 0}
   life3: {fileID: 0}
---- !u!114 &2518351159221632191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8015543420710076071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63d4a30a6c677254fb88a3cc5536e098, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  life1: {fileID: 0}
-  life2: {fileID: 0}
-  life3: {fileID: 0}
+  panelToOpen: {fileID: 4085058756500262653, guid: 938ce3f7937f5b24f99b9b98b71495b4,
+    type: 3}
+  currPanel: {fileID: 0}
 --- !u!61 &4117424133707889714
 BoxCollider2D:
   m_ObjectHideFlags: 0
