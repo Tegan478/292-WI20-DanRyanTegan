@@ -30,76 +30,6 @@ public class Blade : MonoBehaviour
 		rb = GetComponent<Rigidbody2D>();
 		circleCollider = GetComponent<CircleCollider2D>();
 	}
-	
-	// Update is called once per frame
-	void Update()
-	{
-		if (Input.touchCount > 0) //(Input.GetTouch(0).phase == TouchPhase.Moved) 
-		{
-			touch = Input.GetTouch(0);
-			first = false;
-			StartCutting(touch);
-		}
-		else if (Input.touchCount <= 0) //(Input.GetTouch(0).phase == TouchPhase.Ended) 
-		{
-			if (!first)
-			{
-				StopCutting();
-			}
-		}
-
-		if (isCutting)
-		{
-			UpdateCut(touch);
-		}
-
-	}
-
-	void OnTriggerEnter2D(Collider2D col)
-	{
-		if (col.CompareTag("Food"))
-		{
-			print("collided");
-			count += 1; //potentially col.value?
-			score.text = count.ToString();
-			Destroy(col.gameObject);
-		}
-	}
-
-	void UpdateCut(Touch t)
-	{
-		Vector2 newPosition = cam.ScreenToWorldPoint(t.position);
-		rb.position = newPosition;
-
-		float velocity = (newPosition - previousPosition).magnitude * Time.deltaTime;
-		if (velocity > minCuttingVelocity)
-		{
-			circleCollider.enabled = true;
-		}
-		else
-		{
-			circleCollider.enabled = false;
-		}
-
-		previousPosition = newPosition;
-	}
-
-	void StartCutting(Touch t)
-	{
-		isCutting = true;
-		currentBladeTrail = Instantiate(bladeTrailPrefab, transform);
-		previousPosition = cam.ScreenToWorldPoint(t.position);
-		circleCollider.enabled = false;
-	}
-
-	void StopCutting()
-	{
-		isCutting = false;
-		currentBladeTrail.transform.SetParent(null);
-		Destroy(currentBladeTrail, 2f);
-		circleCollider.enabled = false;
-	}
-	/*
 
 	// Update is called once per frame
 	void Update()
@@ -163,7 +93,7 @@ public class Blade : MonoBehaviour
 		Destroy(currentBladeTrail, 2f);
 		circleCollider.enabled = false;
 	}
-	*/
+	
 }
 
 

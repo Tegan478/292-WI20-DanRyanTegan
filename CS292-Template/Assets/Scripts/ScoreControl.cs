@@ -34,7 +34,7 @@ public class ScoreControl : MonoBehaviour
 			}
 			else
 			{
-				//OpenPanel();
+				OpenPanel();
 			}
 		}
 	}
