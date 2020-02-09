@@ -22,6 +22,7 @@ public class Blade : MonoBehaviour
 	CircleCollider2D circleCollider;
 
 	Touch touch;
+	bool first = true;
 
 	void Start()
 	{
@@ -29,18 +30,22 @@ public class Blade : MonoBehaviour
 		rb = GetComponent<Rigidbody2D>();
 		circleCollider = GetComponent<CircleCollider2D>();
 	}
-
+	
 	// Update is called once per frame
 	void Update()
 	{
-		if (Input.touchCount > 0)
+		if (Input.touchCount > 0) //(Input.GetTouch(0).phase == TouchPhase.Moved) 
 		{
 			touch = Input.GetTouch(0);
+			first = false;
 			StartCutting(touch);
 		}
-		else if (Input.touchCount <= 0)
+		else if (Input.touchCount <= 0) //(Input.GetTouch(0).phase == TouchPhase.Ended) 
 		{
-			StopCutting();
+			if (!first)
+			{
+				StopCutting();
+			}
 		}
 
 		if (isCutting)
@@ -54,6 +59,7 @@ public class Blade : MonoBehaviour
 	{
 		if (col.CompareTag("Food"))
 		{
+			print("collided");
 			count += 1; //potentially col.value?
 			score.text = count.ToString();
 			Destroy(col.gameObject);
@@ -93,14 +99,7 @@ public class Blade : MonoBehaviour
 		Destroy(currentBladeTrail, 2f);
 		circleCollider.enabled = false;
 	}
-
 	/*
-	void Start()
-	{
-		cam = Camera.main;
-		rb = GetComponent<Rigidbody2D>();
-		circleCollider = GetComponent<CircleCollider2D>();
-	}
 
 	// Update is called once per frame
 	void Update()
@@ -166,5 +165,6 @@ public class Blade : MonoBehaviour
 	}
 	*/
 }
+
 
 //https://youtu.be/nzeaFOkuHJc?t=490
