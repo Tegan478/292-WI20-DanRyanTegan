@@ -21,6 +21,80 @@ public class Blade : MonoBehaviour
 	Camera cam;
 	CircleCollider2D circleCollider;
 
+	Touch touch;
+
+	void Start()
+	{
+		cam = Camera.main;
+		rb = GetComponent<Rigidbody2D>();
+		circleCollider = GetComponent<CircleCollider2D>();
+	}
+
+	// Update is called once per frame
+	void Update()
+	{
+		if (Input.touchCount > 0)
+		{
+			touch = Input.GetTouch(0);
+			StartCutting(touch);
+		}
+		else if (Input.touchCount <= 0)
+		{
+			StopCutting();
+		}
+
+		if (isCutting)
+		{
+			UpdateCut(touch);
+		}
+
+	}
+
+	void OnTriggerEnter2D(Collider2D col)
+	{
+		if (col.CompareTag("Food"))
+		{
+			count += 1; //potentially col.value?
+			score.text = count.ToString();
+			Destroy(col.gameObject);
+		}
+	}
+
+	void UpdateCut(Touch t)
+	{
+		Vector2 newPosition = cam.ScreenToWorldPoint(t.position);
+		rb.position = newPosition;
+
+		float velocity = (newPosition - previousPosition).magnitude * Time.deltaTime;
+		if (velocity > minCuttingVelocity)
+		{
+			circleCollider.enabled = true;
+		}
+		else
+		{
+			circleCollider.enabled = false;
+		}
+
+		previousPosition = newPosition;
+	}
+
+	void StartCutting(Touch t)
+	{
+		isCutting = true;
+		currentBladeTrail = Instantiate(bladeTrailPrefab, transform);
+		previousPosition = cam.ScreenToWorldPoint(t.position);
+		circleCollider.enabled = false;
+	}
+
+	void StopCutting()
+	{
+		isCutting = false;
+		currentBladeTrail.transform.SetParent(null);
+		Destroy(currentBladeTrail, 2f);
+		circleCollider.enabled = false;
+	}
+
+	/*
 	void Start()
 	{
 		cam = Camera.main;
@@ -90,6 +164,7 @@ public class Blade : MonoBehaviour
 		Destroy(currentBladeTrail, 2f);
 		circleCollider.enabled = false;
 	}
+	*/
 }
 
 //https://youtu.be/nzeaFOkuHJc?t=490
