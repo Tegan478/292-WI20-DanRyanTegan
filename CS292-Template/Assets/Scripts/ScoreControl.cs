@@ -16,7 +16,6 @@ public class ScoreControl : MonoBehaviour
 	{
 		if (col.CompareTag("Food"))
 		{
-			print("off");
 			Destroy(col.gameObject);
 			if (life3.activeSelf)
 			{

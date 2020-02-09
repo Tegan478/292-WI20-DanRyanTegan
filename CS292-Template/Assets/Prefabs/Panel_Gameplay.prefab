@@ -985,8 +985,7 @@ PrefabInstance:
       propertyPath: currPanel
       value: 
       objectReference: {fileID: 267688146487056246}
-    m_RemovedComponents:
-    - {fileID: 6046147094306170722, guid: b488581dee2f59949bf64c9d4acd35e7, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b488581dee2f59949bf64c9d4acd35e7, type: 3}
 --- !u!224 &7580513909234337242 stripped
 RectTransform:

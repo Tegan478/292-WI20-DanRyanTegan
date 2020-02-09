@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 1033073047041468982}
   - component: {fileID: 2593823445991673989}
   - component: {fileID: 5152066946825173015}
-  - component: {fileID: 6046147094306170722}
   m_Layer: 5
   m_Name: Blade
   m_TagString: Blade
@@ -55,8 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelToOpen: {fileID: 4085058756500262653, guid: 938ce3f7937f5b24f99b9b98b71495b4,
     type: 3}
-  currPanel: {fileID: 267688146487056246, guid: ba31b5e58c73b79409f37a24f10b32fe,
-    type: 3}
+  currPanel: {fileID: 0}
 --- !u!50 &4077210522401784151
 Rigidbody2D:
   serializedVersion: 4
@@ -72,11 +70,11 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &1033073047041468982
 MonoBehaviour:
@@ -92,7 +90,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bladeTrailPrefab: {fileID: 2926237074137836772, guid: 0072f0c699b96bc4e8950057996c1a7a,
     type: 3}
-  minCuttingVelocity: 0.001
+  minCuttingVelocity: 0
   score: {fileID: 0}
 --- !u!222 &2593823445991673989
 CanvasRenderer:
@@ -117,18 +115,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.88462406, y: 0}
   serializedVersion: 2
-  m_Radius: 0.38472408
---- !u!114 &6046147094306170722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3890791011928439284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dd4feacfff5fdb449bcbcb826a0b341, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panelToOpen: {fileID: 0}
-  currPanel: {fileID: 0}
+  m_Radius: 0.5
