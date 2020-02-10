@@ -52,8 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dd4feacfff5fdb449bcbcb826a0b341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelToOpen: {fileID: 4085058756500262653, guid: 938ce3f7937f5b24f99b9b98b71495b4,
-    type: 3}
+  panelToOpen: {fileID: 0}
   currPanel: {fileID: 0}
 --- !u!50 &4077210522401784151
 Rigidbody2D:
@@ -90,6 +89,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bladeTrailPrefab: {fileID: 2926237074137836772, guid: 0072f0c699b96bc4e8950057996c1a7a,
     type: 3}
+  endGameScore: {fileID: 0}
   minCuttingVelocity: 0
   score: {fileID: 0}
 --- !u!222 &2593823445991673989
