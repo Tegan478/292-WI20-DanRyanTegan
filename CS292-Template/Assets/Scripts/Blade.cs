@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Blade : MonoBehaviour
 {
 	public GameObject bladeTrailPrefab;
+	public Text endGameScore;
 	public float minCuttingVelocity = .001f;
 	public Text score;
 
@@ -55,6 +56,7 @@ public class Blade : MonoBehaviour
 		if (col.CompareTag("Food"))
 		{
 			count += 1; //potentially col.value?
+			endGameScore.text = count.ToString();
 			score.text = count.ToString();
 			Destroy(col.gameObject);
 		}

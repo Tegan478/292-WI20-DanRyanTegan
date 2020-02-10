@@ -48,8 +48,7 @@ MonoBehaviour:
   life1: {fileID: 0}
   life2: {fileID: 0}
   life3: {fileID: 0}
-  panelToOpen: {fileID: 4085058756500262653, guid: 938ce3f7937f5b24f99b9b98b71495b4,
-    type: 3}
+  panelToOpen: {fileID: 0}
   currPanel: {fileID: 0}
 --- !u!61 &4117424133707889714
 BoxCollider2D:
