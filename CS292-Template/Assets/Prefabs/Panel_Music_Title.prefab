@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1411855797069254574
 RectTransform:
   m_ObjectHideFlags: 0
@@ -82,6 +82,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1411855797069254574}
     m_Modifications:
+    - target: {fileID: 3916982579312191748, guid: 32914cf15dea78a4781920494b3c967b,
+        type: 3}
+      propertyPath: panelToOpen
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6069291836353687549, guid: 32914cf15dea78a4781920494b3c967b,
         type: 3}
       propertyPath: m_LocalPosition.x
