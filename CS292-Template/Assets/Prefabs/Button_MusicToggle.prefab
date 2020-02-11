@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c5b8bb754b24c71b0f804fff7adb02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelToOpen: {fileID: 4465958045856705452, guid: a3e3b2942ec2b46f7be0bfe3ece6cff6,
+  panelToOpen: {fileID: 2577521140727220885, guid: ab0dd7713f7324bd4b857eedf462fbf4,
     type: 3}
 --- !u!114 &5934287376873262591
 MonoBehaviour:
