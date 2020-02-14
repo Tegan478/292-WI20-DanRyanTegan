@@ -839,6 +839,12 @@ PrefabInstance:
       propertyPath: scoreHUD
       value: 
       objectReference: {fileID: 2854158207364259383}
+    - target: {fileID: 4246599547520080055, guid: 818488ba0dd7a7c45bef358ab4d70624,
+        type: 3}
+      propertyPath: endGameScore
+      value: 
+      objectReference: {fileID: 2169810275286043447, guid: 2a821b0cd7acc514093e2a96fd3b1666,
+        type: 3}
     - target: {fileID: 8015543420710076071, guid: 818488ba0dd7a7c45bef358ab4d70624,
         type: 3}
       propertyPath: m_Name
