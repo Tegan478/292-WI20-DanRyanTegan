@@ -84,6 +84,7 @@ GameObject:
   - component: {fileID: 6069291836353687549}
   - component: {fileID: 7053025428183459228}
   - component: {fileID: 2429667643152355285}
+  - component: {fileID: 3916982579312191748}
   - component: {fileID: 5934287376873262591}
   m_Layer: 5
   m_Name: Button_MusicToggle
@@ -148,6 +149,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3916982579312191748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8623211496586564144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71c5b8bb754b24c71b0f804fff7adb02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelToOpen: {fileID: 2577521140727220885, guid: ab0dd7713f7324bd4b857eedf462fbf4,
+    type: 3}
 --- !u!114 &5934287376873262591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,4 +205,15 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2429667643152355285}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3916982579312191748}
+        m_MethodName: OpenPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
