@@ -22,9 +22,6 @@ public class Blade : MonoBehaviour
 	Camera cam;
 	CircleCollider2D circleCollider;
 
-	Touch touch;
-	bool first = true;
-
 	void Start()
 	{
 		cam = Camera.main;
@@ -95,8 +92,4 @@ public class Blade : MonoBehaviour
 		Destroy(currentBladeTrail, 2f);
 		circleCollider.enabled = false;
 	}
-	
 }
-
-
-//https://youtu.be/nzeaFOkuHJc?t=490

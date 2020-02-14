@@ -823,6 +823,22 @@ PrefabInstance:
       propertyPath: life3
       value: 
       objectReference: {fileID: 8334503562357807859}
+    - target: {fileID: 4246599547520080055, guid: 818488ba0dd7a7c45bef358ab4d70624,
+        type: 3}
+      propertyPath: panelToOpen
+      value: 
+      objectReference: {fileID: 4085058756500262653, guid: 938ce3f7937f5b24f99b9b98b71495b4,
+        type: 3}
+    - target: {fileID: 4246599547520080055, guid: 818488ba0dd7a7c45bef358ab4d70624,
+        type: 3}
+      propertyPath: currPanel
+      value: 
+      objectReference: {fileID: 267688146487056246}
+    - target: {fileID: 4246599547520080055, guid: 818488ba0dd7a7c45bef358ab4d70624,
+        type: 3}
+      propertyPath: scoreHUD
+      value: 
+      objectReference: {fileID: 2854158207364259383}
     - target: {fileID: 8015543420710076071, guid: 818488ba0dd7a7c45bef358ab4d70624,
         type: 3}
       propertyPath: m_Name
@@ -963,6 +979,26 @@ PrefabInstance:
       propertyPath: currPanel
       value: 
       objectReference: {fileID: 267688146487056246}
+    - target: {fileID: 7375391714013183072, guid: b488581dee2f59949bf64c9d4acd35e7,
+        type: 3}
+      propertyPath: life1
+      value: 
+      objectReference: {fileID: 3648139466469252259}
+    - target: {fileID: 7375391714013183072, guid: b488581dee2f59949bf64c9d4acd35e7,
+        type: 3}
+      propertyPath: life2
+      value: 
+      objectReference: {fileID: 8282440947127433949}
+    - target: {fileID: 7375391714013183072, guid: b488581dee2f59949bf64c9d4acd35e7,
+        type: 3}
+      propertyPath: life3
+      value: 
+      objectReference: {fileID: 8334503562357807859}
+    - target: {fileID: 7375391714013183072, guid: b488581dee2f59949bf64c9d4acd35e7,
+        type: 3}
+      propertyPath: scoreHUD
+      value: 
+      objectReference: {fileID: 8596046479077765389}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b488581dee2f59949bf64c9d4acd35e7, type: 3}
 --- !u!224 &7580513909234337242 stripped
@@ -1237,6 +1273,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 7252893346023736554}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8596046479077765389 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1435591274675008999, guid: c7dba18d574d41e44aa0fb5ae14cfda8,
+    type: 3}
+  m_PrefabInstance: {fileID: 7252893346023736554}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7986583310188099020
 PrefabInstance:
   m_ObjectHideFlags: 0

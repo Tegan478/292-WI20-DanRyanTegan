@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreControl : MonoBehaviour
 {
@@ -11,7 +12,18 @@ public class ScoreControl : MonoBehaviour
 	public GameObject panelToOpen;
 	public GameObject currPanel;
 
+	public Text scoreHUD;
+	public Text endGameScore;
+
 	// Start is called before the first frame update
+
+	void Start()
+	{
+		scoreHUD.text = "0";
+		endGameScore.text = "0";
+
+	}
+
 	void OnTriggerEnter2D(Collider2D col)
 	{
 		if (col.CompareTag("Food"))
@@ -31,10 +43,6 @@ public class ScoreControl : MonoBehaviour
 			{
 				print("1");
 				life1.SetActive(false);
-			}
-			else
-			{
-				OpenPanel();
 			}
 		}
 	}
