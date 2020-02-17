@@ -10,7 +10,7 @@ public class Blade : MonoBehaviour
 	public float minCuttingVelocity = .001f;
 	public Text score;
 
-	int count = 0;
+	public static int count = 0;
 
 	bool isCutting = false;
 

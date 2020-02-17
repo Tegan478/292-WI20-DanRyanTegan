@@ -21,7 +21,6 @@ public class ScoreControl : MonoBehaviour
 	{
 		scoreHUD.text = "0";
 		endGameScore.text = "0";
-
 	}
 
 	void OnTriggerEnter2D(Collider2D col)
@@ -49,7 +48,6 @@ public class ScoreControl : MonoBehaviour
 
 	public void OpenPanel()
 	{
-		//print("button pressed");
 		if (panelToOpen != null)
 		{
 			panelToOpen.SetActive(true);
