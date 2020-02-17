@@ -19,6 +19,7 @@ public class Food : MonoBehaviour
 		randomForce = Random.Range(minForce, maxForce);
 		rb = GetComponent<Rigidbody2D>();
 		rb.AddForce(transform.up * randomForce, ForceMode2D.Impulse);
+		rb.AddTorque(Random.Range(-180,180));
 	}
 
 	void OnTriggerEnter2D(Collider2D col)

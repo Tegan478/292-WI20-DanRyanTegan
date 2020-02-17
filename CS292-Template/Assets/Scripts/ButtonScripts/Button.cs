@@ -18,7 +18,7 @@ public class Button : MonoBehaviour
 
     public void OpenPanel()
     {
-        //print("button pressed");
+        print("button pressed");
         if (panelToOpen != null)
         {
             panelToOpen.SetActive(true);
