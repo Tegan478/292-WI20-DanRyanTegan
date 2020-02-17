@@ -10,7 +10,7 @@ public class Blade : MonoBehaviour
 	public float minCuttingVelocity = .001f;
 	public Text score;
 
-	int count = 0;
+	public static int count = 0;
 
 	bool isCutting = false;
 
@@ -21,9 +21,6 @@ public class Blade : MonoBehaviour
 	Rigidbody2D rb;
 	Camera cam;
 	CircleCollider2D circleCollider;
-
-	Touch touch;
-	bool first = true;
 
 	void Start()
 	{
@@ -95,8 +92,4 @@ public class Blade : MonoBehaviour
 		Destroy(currentBladeTrail, 2f);
 		circleCollider.enabled = false;
 	}
-	
 }
-
-
-//https://youtu.be/nzeaFOkuHJc?t=490

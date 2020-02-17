@@ -25,6 +25,7 @@ public class Button : MonoBehaviour
 
         if (isPlay)
         {
+            Blade.count = 0;
             ResetCounters();
         }
     }
