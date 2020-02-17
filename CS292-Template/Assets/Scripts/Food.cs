@@ -5,14 +5,17 @@ using UnityEngine;
 public class Food : MonoBehaviour
 {
 	public GameObject slicedPrefab;
-	private float startForce = 17f;
+	private float minForce = 17f;
+	private float maxForce = 17f;
+	private float randomForce;
 
 	Rigidbody2D rb;
 
 	void Start()
 	{
+		randomForce = Random.Range(minForce, maxForce);
 		rb = GetComponent<Rigidbody2D>();
-		rb.AddForce(transform.up * startForce, ForceMode2D.Impulse);
+		rb.AddForce(transform.up * randomForce, ForceMode2D.Impulse);
 	}
 
 	void OnTriggerEnter2D(Collider2D col)
