@@ -8,11 +8,11 @@ public class MusicSFXButton : MonoBehaviour
     
     public void OpenPanel()
     {
-        print(panelToOpen);
-        print("button pressed");
+       // print(panelToOpen);
+        //print("button pressed");
         if (panelToOpen != null)
         {
-            print(panelToOpen.activeSelf);
+            //print(panelToOpen.activeSelf);
            if (panelToOpen.activeSelf)
             {
             panelToOpen.SetActive(false);
