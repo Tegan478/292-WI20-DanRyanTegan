@@ -15,6 +15,7 @@ public class ScoreControl : MonoBehaviour
 	public Text scoreHUD;
 	public Text endGameScore;
 
+	public LifeLossParticle nin;
 	// Start is called before the first frame update
 
 	void Start()
@@ -30,17 +31,17 @@ public class ScoreControl : MonoBehaviour
 			Destroy(col.gameObject);
 			if (life3.activeSelf)
 			{
-				print("3");
+				nin.pop3();
 				life3.SetActive(false);
 			}
 			else if (life2.activeSelf)
 			{
-				print("2");
+				nin.pop2();
 				life2.SetActive(false);
 			}
 			else if (life1.activeSelf)
 			{
-				print("1");
+				nin.pop1();
 				life1.SetActive(false);
 			}
 		}

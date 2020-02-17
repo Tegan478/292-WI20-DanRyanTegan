@@ -40,12 +40,13 @@ public class EndGame : MonoBehaviour
     }
 
     // Update is called once per frame
+
     void Update()
     {
         if (!life1.activeSelf)
         {
-            string temp = scoreHUD.text;
-            score = int.Parse(temp);
+            //string temp = scoreHUD.text;
+            //score = int.Parse(temp);
             OpenPanel();
         }
     }
