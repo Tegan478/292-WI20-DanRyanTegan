@@ -10,7 +10,7 @@ public class Blade : MonoBehaviour
 	public float minCuttingVelocity = .001f;
 	public Text score;
 
-	public static int count = 0;
+	public static float count = 0;
 
 	bool isCutting = false;
 
@@ -21,6 +21,8 @@ public class Blade : MonoBehaviour
 	Rigidbody2D rb;
 	Camera cam;
 	CircleCollider2D circleCollider;
+
+	float itemVal;
 
 	void Start()
 	{
@@ -52,7 +54,8 @@ public class Blade : MonoBehaviour
 	{
 		if (col.CompareTag("Food"))
 		{
-			count += 1; //potentially col.value?
+			itemVal = Food.val;
+			count += itemVal; //potentially col.value?
 			endGameScore.text = count.ToString();
 			score.text = count.ToString();
 			Destroy(col.gameObject);
