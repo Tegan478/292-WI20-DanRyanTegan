@@ -8,6 +8,9 @@ public class Food : MonoBehaviour
 	private float minForce = 17f;
 	private float maxForce = 17f;
 	private float randomForce;
+	public float indval;
+
+	public static float val;
 
 	Rigidbody2D rb;
 
@@ -22,6 +25,7 @@ public class Food : MonoBehaviour
 	{
 		if (col.CompareTag("Blade"))
 		{
+			val = indval;
 			Vector3 direction = (col.transform.position - transform.position).normalized;
 
 			Quaternion rotation = Quaternion.LookRotation(direction);

@@ -97,6 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slicedPrefab: {fileID: 7385028644380646008, guid: 4017b17dcf40b394caa703e83011c344,
     type: 3}
+  indval: 2.5
 --- !u!50 &3107763342768976198
 Rigidbody2D:
   serializedVersion: 4
