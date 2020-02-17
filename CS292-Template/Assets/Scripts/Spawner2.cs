@@ -21,7 +21,7 @@ public class Spawner2 : MonoBehaviour
             GameObject randomItem = items[Random.Range(0, items.Length)];
 
             Instantiate(randomItem, new Vector3(randomSpawnPoint.position.x, randomSpawnPoint.position.y, 0), randomSpawnPoint.rotation);
-            spawnTime = Random.Range(5, 80);
+            spawnTime = Random.Range(0, 80);
             count = 0;
         }
     }
