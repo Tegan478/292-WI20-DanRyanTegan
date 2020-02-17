@@ -6,7 +6,7 @@ public class Food : MonoBehaviour
 {
 	public GameObject slicedPrefab;
 	private float minForce = 17f;
-	private float maxForce = 20f;
+	private float maxForce = 17f;
 	private float randomForce;
 
 	Rigidbody2D rb;
