@@ -8,16 +8,18 @@ public class Spawner : MonoBehaviour
     public GameObject[] items;
     public GameObject bomb;
 
-    private float timeBtwSpawns;
-    public float startTimeBtwSpawns;
+    private float timeBtwSpawns = 2f;
+    public static float startTimeBtwSpawns;
     public float minTimeBtwSpawns;
     public float decrease;
 
     private float bombTimeMin = 4f;
     private float bombTimeStart = 5;
-    private float newBomb = 3f;
+    private float newBomb = 10f;
     private float decBomb = .5f;
 
+
+  
     void Update()
     {
         if (timeBtwSpawns <= 0)

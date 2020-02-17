@@ -13,6 +13,8 @@ public class Button : MonoBehaviour
     public GameObject life1;
     public GameObject life2;
     public GameObject life3;
+    
+    public GameObject spawner;
 
     public void OpenPanel()
     {
@@ -26,6 +28,7 @@ public class Button : MonoBehaviour
         if (isPlay)
         {
             Blade.count = 0;
+            Spawner.startTimeBtwSpawns = 1.1f;
             ResetCounters();
         }
     }

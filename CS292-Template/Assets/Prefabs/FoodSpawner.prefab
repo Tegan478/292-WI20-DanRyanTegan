@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2627764597706261505}
-  - component: {fileID: 7644730011672605378}
+  - component: {fileID: 758163391206548742}
   m_Layer: 0
   m_Name: FoodSpawner
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7644730011672605378
+--- !u!114 &758163391206548742
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,16 +40,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1598915325474079672}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec280e90f720e22488bd6492d96c7931, type: 3}
+  m_Script: {fileID: 11500000, guid: a899f0d49c325e047bebfaacb50027b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoints:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   items:
+  - {fileID: 2340205009080827151, guid: 6b495cd906e740a46a7f0cbc0f49e4cd, type: 3}
+  - {fileID: 4141362270815819097, guid: 5b61fe555936ea54fb78e55ae786ad7b, type: 3}
+  - {fileID: 1180261487235149263, guid: c68d6f35445c8e449ac2d2b449aa17fa, type: 3}
+  - {fileID: 2756778068418130161, guid: 21732c3316b9e824aa7a20c41419c011, type: 3}
+  - {fileID: 5823514972197326, guid: 329106885a7b87640bcde3445b935038, type: 3}
+  - {fileID: 6133766110847364129, guid: a3cc892c301d59d45b256cc2e88781a1, type: 3}
   - {fileID: 2480568352673642279, guid: f53ce792232537e4ab0f0ede2b2cb2e6, type: 3}
-  bomb:
-  - {fileID: 1917597342697127866, guid: 1280c4a565277d54e847d9097c1b2dff, type: 3}
-  startTimeBtwSpawns: 1
-  minTimeBtwSpawns: 1
-  decrease: 0.1
+  - {fileID: 7697042060853559029, guid: 1825153abf177344691ffb48fead2aff, type: 3}
+  bomb: {fileID: 1917597342697127866, guid: 1280c4a565277d54e847d9097c1b2dff, type: 3}
