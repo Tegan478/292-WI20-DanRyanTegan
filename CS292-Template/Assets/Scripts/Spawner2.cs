@@ -10,6 +10,7 @@ public class Spawner2 : MonoBehaviour
 
     private int count;
     private int spawnTime = 30;
+    private int[] spawnTimes = { 0, 5, 10, 20, 30, 30, 30, 30, 60, 80 };
 
 
 
@@ -21,7 +22,7 @@ public class Spawner2 : MonoBehaviour
             GameObject randomItem = items[Random.Range(0, items.Length)];
 
             Instantiate(randomItem, new Vector3(randomSpawnPoint.position.x, randomSpawnPoint.position.y, 0), randomSpawnPoint.rotation);
-            spawnTime = Random.Range(0, 80);
+            spawnTime = spawnTimes[Random.Range(0, spawnTimes.Length)];
             count = 0;
         }
     }

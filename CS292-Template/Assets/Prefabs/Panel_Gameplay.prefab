@@ -510,6 +510,11 @@ PrefabInstance:
       objectReference: {fileID: 4498848218626442709}
     - target: {fileID: 758163391206548742, guid: 780ce02e3eb954648a552a86417eb1e0,
         type: 3}
+      propertyPath: items.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 758163391206548742, guid: 780ce02e3eb954648a552a86417eb1e0,
+        type: 3}
       propertyPath: spawnPoints.Array.data[0]
       value: 
       objectReference: {fileID: 5326950298615038896}
@@ -568,6 +573,12 @@ PrefabInstance:
       propertyPath: spawnPoints.Array.data[11]
       value: 
       objectReference: {fileID: 4498848218626442709}
+    - target: {fileID: 758163391206548742, guid: 780ce02e3eb954648a552a86417eb1e0,
+        type: 3}
+      propertyPath: items.Array.data[8]
+      value: 
+      objectReference: {fileID: 1917597342697127866, guid: 1280c4a565277d54e847d9097c1b2dff,
+        type: 3}
     - target: {fileID: 1598915325474079672, guid: 780ce02e3eb954648a552a86417eb1e0,
         type: 3}
       propertyPath: m_Name

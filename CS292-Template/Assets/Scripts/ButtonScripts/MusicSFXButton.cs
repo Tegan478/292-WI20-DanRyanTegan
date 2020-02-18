@@ -9,7 +9,7 @@ public class MusicSFXButton : MonoBehaviour
     public void OpenPanel()
     {
        // print(panelToOpen);
-        //print("button pressed");
+        print("sfx button pressed");
         if (panelToOpen != null)
         {
             //print(panelToOpen.activeSelf);
