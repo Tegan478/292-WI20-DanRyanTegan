@@ -8,6 +8,14 @@ TagManager:
   - OffScreen
   - Food
   - Bomb
+  - Chip
+  - Coffee
+  - Soda
+  - Cookie
+  - Eggs
+  - Noodle
+  - Popsicle
+  - Sandwich
   layers:
   - Default
   - TransparentFX
