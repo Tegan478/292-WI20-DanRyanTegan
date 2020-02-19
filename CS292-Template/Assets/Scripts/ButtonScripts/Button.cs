@@ -34,12 +34,12 @@ public class Button : MonoBehaviour
    
     public void OpenPanel()
     {
-        //print("button pressed");
+        print("OpenPanel called");
         if (panelToOpen != null)
         {
-            //panelToOpen.SetActive(true);
+            panelToOpen.SetActive(true);
         }
-        //currPanel.SetActive(false);
+        currPanel.SetActive(false);
 
         if (isPlay)
         {
