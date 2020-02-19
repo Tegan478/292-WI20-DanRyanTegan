@@ -56,8 +56,8 @@ public class Blade : MonoBehaviour
 		{
 			itemVal = Food.val;
 			count += itemVal; //potentially col.value?
-			endGameScore.text = count.ToString();
-			score.text = count.ToString();
+			endGameScore.text = count.ToString(); //sets the score at the end of the game
+			score.text = count.ToString(); //sets the score in the HUD
 			Destroy(col.gameObject);
 		}
 	}

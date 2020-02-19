@@ -6,6 +6,7 @@ public class Button : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject panelToOpen;
+    public GameObject thingToAnimate;
     public GameObject currPanel;
 
     public bool isPlay = false;
@@ -16,14 +17,24 @@ public class Button : MonoBehaviour
     
     public GameObject spawner;
 
+    public void PlayAnim()
+    {
+        print("PlayAnim called");
+        thingToAnimate.SetActive(true);
+        Animator animator = thingToAnimate.GetComponent<Animator>();
+        if (animator != null)
+        {
+            print("animator is not null");
+            bool isOpen = animator.GetBool("Open");
+            animator.SetBool("Open", !isOpen);
+
+
+        }
+    }
+   
     public void OpenPanel()
     {
         print("button pressed");
-        if (panelToOpen != null)
-        {
-            panelToOpen.SetActive(true);
-        }
-        currPanel.SetActive(false);
 
         if (isPlay)
         {
@@ -31,6 +42,13 @@ public class Button : MonoBehaviour
             Spawner.startTimeBtwSpawns = 1.1f;
             ResetCounters();
         }
+        
+        if (panelToOpen != null)
+        {
+            //panelToOpen.SetActive(true);
+            //currPanel.SetActive(false);
+        }
+
     }
 
     public void ResetCounters()
