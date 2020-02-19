@@ -61,9 +61,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d4a30a6c677254fb88a3cc5536e098, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life1: {fileID: 0}
-  life2: {fileID: 0}
-  life3: {fileID: 0}
   score: {fileID: 0}
 --- !u!114 &1198844172878132144
 MonoBehaviour:
@@ -147,6 +144,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5907394356619219213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,11 +179,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelToOpen: {fileID: 0}
+  thingToAnimate: {fileID: 0}
   currPanel: {fileID: 0}
   isPlay: 0
   life1: {fileID: 0}
   life2: {fileID: 0}
   life3: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &5502914167919448655
 GameObject:
   m_ObjectHideFlags: 0
