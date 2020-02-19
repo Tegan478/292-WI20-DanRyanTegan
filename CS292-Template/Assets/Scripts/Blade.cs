@@ -24,6 +24,15 @@ public class Blade : MonoBehaviour
 
 	float itemVal;
 
+	public static int chip = 0;
+	public static int coffee = 0;
+	public static int soda = 0;
+	public static int cookie = 0;
+	public static int eggs = 0;
+	public static int noodle = 0;
+	public static int popsicle = 0;
+	public static int sandwich = 0;
+
 	void Start()
 	{
 		cam = Camera.main;
@@ -52,12 +61,39 @@ public class Blade : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
-		if (col.CompareTag("Food"))
+		if (col.CompareTag("Chip") || col.CompareTag("Coffee") || col.CompareTag("Soda") || col.CompareTag("Cookie") || 
+			col.CompareTag("Eggs") || col.CompareTag("Noodle") || col.CompareTag("Popsicle") || col.CompareTag("Sandwich"))
 		{
 			itemVal = Food.val;
 			count += itemVal; //potentially col.value?
 			endGameScore.text = count.ToString();
 			score.text = count.ToString();
+
+			if (col.CompareTag("Chip"))
+			{
+				chip++;
+			} else if (col.CompareTag("Coffee"))
+			{
+				coffee++;
+			} else if (col.CompareTag("Soda"))
+			{
+				soda++;
+			} else if (col.CompareTag("Cookie"))
+			{
+				cookie++;
+			} else if (col.CompareTag("Eggs"))
+			{
+				eggs++;
+			} else if (col.CompareTag("Noodle"))
+			{
+				noodle++;
+			} else if (col.CompareTag("Popsicle"))
+			{
+				popsicle++;
+			} else if (col.CompareTag("Sandwich"))
+			{
+				sandwich++;
+			}
 			Destroy(col.gameObject);
 		}
 	}

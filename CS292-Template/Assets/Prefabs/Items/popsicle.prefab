@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4712418754174780005}
   m_Layer: 11
   m_Name: popsicle
-  m_TagString: Food
+  m_TagString: Popsicle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

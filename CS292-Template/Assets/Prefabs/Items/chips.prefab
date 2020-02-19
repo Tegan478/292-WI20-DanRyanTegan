@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6582365639389289282}
   m_Layer: 9
   m_Name: chips
-  m_TagString: Food
+  m_TagString: Chip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

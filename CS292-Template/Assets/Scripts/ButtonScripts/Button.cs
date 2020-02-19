@@ -18,7 +18,7 @@ public class Button : MonoBehaviour
 
     public void OpenPanel()
     {
-        print("button pressed");
+        //print("button pressed");
         if (panelToOpen != null)
         {
             panelToOpen.SetActive(true);
@@ -27,6 +27,15 @@ public class Button : MonoBehaviour
 
         if (isPlay)
         {
+            Blade.chip = 0;
+            Blade.coffee = 0;
+            Blade.soda = 0;
+            Blade.cookie = 0;
+            Blade.popsicle = 0;
+            Blade.noodle = 0;
+            Blade.eggs = 0;
+            Blade.sandwich = 0;
+
             Blade.count = 0;
             Spawner.startTimeBtwSpawns = 1.1f;
             ResetCounters();
