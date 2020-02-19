@@ -49,6 +49,7 @@ MonoBehaviour:
   slicedPrefab: {fileID: 7023690151859562464, guid: 6e2f868fba4494d4188904e8f17c5eef,
     type: 3}
   indval: 0.99
+  source: {fileID: 194849670509398711, guid: 559951535dc5044f38a9f532219c7006, type: 3}
 --- !u!212 &5237626105787546763
 SpriteRenderer:
   m_ObjectHideFlags: 0
