@@ -118,6 +118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slicedPrefab: {fileID: 2124541222306880411, guid: 3903fdaa7c7249144917b88c5c5274d7,
     type: 3}
+  indval: 0
+  source: {fileID: 194849670509398711, guid: 559951535dc5044f38a9f532219c7006, type: 3}
 --- !u!58 &4569654672355104366
 CircleCollider2D:
   m_ObjectHideFlags: 0

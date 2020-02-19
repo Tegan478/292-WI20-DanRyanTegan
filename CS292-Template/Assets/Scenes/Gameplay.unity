@@ -180,7 +180,7 @@ PrefabInstance:
     - target: {fileID: 51247486119996031, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 173690066778279029, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
@@ -677,6 +677,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2358900732105096557, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2362418522973383868, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -976,6 +981,11 @@ PrefabInstance:
         type: 3}
       propertyPath: score
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3573481216325137625, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3599057387623594007, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
@@ -1747,6 +1757,11 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7274070334676677053, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 7307268277936347834, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1777,6 +1792,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7399522459147334177, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7594396181239063339, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1787,6 +1807,11 @@ PrefabInstance:
       propertyPath: endGameScore
       value: 
       objectReference: {fileID: 462233703}
+    - target: {fileID: 7777579871038942828, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7789431015945990835, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
       propertyPath: panelToOpen

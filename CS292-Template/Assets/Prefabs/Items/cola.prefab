@@ -98,6 +98,7 @@ MonoBehaviour:
   slicedPrefab: {fileID: 733280021777496308, guid: e9a479ea3d6e2ea48b2ffe765f427758,
     type: 3}
   indval: 1.9
+  source: {fileID: 194849670509398711, guid: 559951535dc5044f38a9f532219c7006, type: 3}
 --- !u!50 &6463113758015870658
 Rigidbody2D:
   serializedVersion: 4
