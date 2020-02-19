@@ -36,19 +36,31 @@ public class Button : MonoBehaviour
         currPanel.SetActive(false);
     }
 
-    public void TurnOff()
+    public void Play()
     {
-        thingToAnimate.SetActive(false);
-    }
+        Blade.chip = 0;
+        Blade.coffee = 0;
+        Blade.soda = 0;
+        Blade.cookie = 0;
+        Blade.popsicle = 0;
+        Blade.noodle = 0;
+        Blade.eggs = 0;
+        Blade.sandwich = 0;
 
-    public void OpenPanel()
-    {
-        print("OpenPanel called");
+        Blade.count = 0;
+        Spawner.startTimeBtwSpawns = 1.1f;
+        ResetCounters(); ;
+
         if (panelToOpen != null)
         {
             panelToOpen.SetActive(true);
         }
         ClosePanel();
+    }
+
+    public void OpenPanel()
+    {
+        print("OpenPanel called");
 
         if (isPlay)
         {
@@ -65,12 +77,12 @@ public class Button : MonoBehaviour
             Spawner.startTimeBtwSpawns = 1.1f;
             ResetCounters();
         }
-        
+
         if (panelToOpen != null)
         {
-            //panelToOpen.SetActive(true);
-            //currPanel.SetActive(false);
+            panelToOpen.SetActive(true);
         }
+        ClosePanel(); 
 
     }
 
