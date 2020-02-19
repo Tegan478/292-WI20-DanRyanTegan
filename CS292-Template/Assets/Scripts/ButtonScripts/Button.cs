@@ -37,9 +37,9 @@ public class Button : MonoBehaviour
         //print("button pressed");
         if (panelToOpen != null)
         {
-            panelToOpen.SetActive(true);
+            //panelToOpen.SetActive(true);
         }
-        currPanel.SetActive(false);
+        //currPanel.SetActive(false);
 
         if (isPlay)
         {
