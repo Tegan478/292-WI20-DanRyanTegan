@@ -27,11 +27,20 @@ public class Button : MonoBehaviour
             print("animator is not null");
             bool isOpen = animator.GetBool("Open");
             animator.SetBool("Open", !isOpen);
-
+            
 
         }
     }
-   
+   public void ClosePanel()
+    {
+        currPanel.SetActive(false);
+    }
+
+    public void TurnOff()
+    {
+        thingToAnimate.SetActive(false);
+    }
+
     public void OpenPanel()
     {
         print("OpenPanel called");
@@ -39,7 +48,7 @@ public class Button : MonoBehaviour
         {
             panelToOpen.SetActive(true);
         }
-        currPanel.SetActive(false);
+        ClosePanel();
 
         if (isPlay)
         {
