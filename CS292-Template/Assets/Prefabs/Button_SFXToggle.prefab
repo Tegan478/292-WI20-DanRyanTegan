@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3577533830322374133}
   - component: {fileID: 2857476332054192660}
+  - component: {fileID: 4925663511806032828}
   - component: {fileID: 15270797531241515}
   - component: {fileID: 516743067204675687}
   m_Layer: 5
@@ -47,6 +48,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3246045624902260283}
   m_CullTransparentMesh: 0
+--- !u!114 &4925663511806032828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3246045624902260283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777c834cf7663490fb138806e90dfcb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &15270797531241515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,7 +130,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 15270797531241515}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4925663511806032828}
+        m_MethodName: SFXDisable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6632620944370915413
 GameObject:
   m_ObjectHideFlags: 0
