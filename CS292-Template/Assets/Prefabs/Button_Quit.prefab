@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1409422864103232262}
   - component: {fileID: 6676592829868374456}
   - component: {fileID: 1687330995679972497}
+  - component: {fileID: 7482887580653266379}
   - component: {fileID: 6059661680442964403}
   - component: {fileID: 3391924360550784715}
   m_Layer: 5
@@ -76,6 +77,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7482887580653266379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854507602244957236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8afe1f2c038e4172a9d1c3f2fed3474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &6059661680442964403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,7 +131,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1687330995679972497}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7482887580653266379}
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3391924360550784715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,7 +156,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelToOpen: {fileID: 0}
+  thingToAnimate: {fileID: 0}
   currPanel: {fileID: 0}
+  isPlay: 0
+  life1: {fileID: 0}
+  life2: {fileID: 0}
+  life3: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &2460259813731123154
 GameObject:
   m_ObjectHideFlags: 0
