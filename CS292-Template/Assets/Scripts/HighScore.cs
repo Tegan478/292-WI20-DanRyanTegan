@@ -26,7 +26,7 @@ public class HighScore : MonoBehaviour
         {
             PlayerPrefs.SetFloat("highscore", curr);
             PlayerPrefs.Save();
-            highscore.text = (PlayerPrefs.GetFloat("highscore")).ToString();
         }
+        highscore.text = (PlayerPrefs.GetFloat("highscore")).ToString();
     }
 }
