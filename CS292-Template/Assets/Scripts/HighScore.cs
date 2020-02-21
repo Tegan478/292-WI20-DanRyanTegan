@@ -24,7 +24,9 @@ public class HighScore : MonoBehaviour
         float high = float.Parse(highscore.text);
         if (curr > high)
         {
-            highscore.text = score.text;
+            PlayerPrefs.SetFloat("highscore", curr);
+            PlayerPrefs.Save();
+            highscore.text = (PlayerPrefs.GetFloat("highscore")).ToString();
         }
     }
 }
