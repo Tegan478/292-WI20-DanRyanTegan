@@ -13,11 +13,9 @@ public class Food : MonoBehaviour
 	public static float val;
 
 	Rigidbody2D rb;
-	public AudioSource source;
 
 	void Start()
 	{
-		source = GetComponent<AudioSource>();
 		randomForce = Random.Range(minForce, maxForce);
 		rb = GetComponent<Rigidbody2D>();
 		rb.AddForce(transform.up * randomForce, ForceMode2D.Impulse);
@@ -28,7 +26,6 @@ public class Food : MonoBehaviour
 	{
 		if (col.CompareTag("Blade"))
 		{
-			source.Play();
 			val = indval;
 			Vector3 direction = (col.transform.position - transform.position).normalized;
 
