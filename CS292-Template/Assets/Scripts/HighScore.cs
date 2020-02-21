@@ -21,7 +21,7 @@ public class HighScore : MonoBehaviour
     {
         summ.setSumm();
         float curr = float.Parse(score.text);
-        float high = float.Parse(highscore.text);
+        float high = PlayerPrefs.GetFloat("highscore");
         if (curr > high)
         {
             PlayerPrefs.SetFloat("highscore", curr);
