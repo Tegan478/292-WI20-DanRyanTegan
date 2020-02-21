@@ -12,12 +12,13 @@ public class TitleScore : MonoBehaviour
         
     }
 
+    public void clear()
+    {
+        PlayerPrefs.SetFloat("highscore", 0);
+    }
     // Update is called once per frame
     void Update()
     {
-
-        
         score.text = (PlayerPrefs.GetFloat("highscore")).ToString();
-
     }
 }
