@@ -10,6 +10,8 @@ public class Button : MonoBehaviour
     public GameObject currPanel;
 
     public bool isPlay = false;
+    public bool needsPause = false;
+    public bool toResume = false;
 
     public GameObject life1;
     public GameObject life2;
@@ -76,6 +78,16 @@ public class Button : MonoBehaviour
             Blade.count = 0;
             Spawner.startTimeBtwSpawns = 1.1f;
             ResetCounters();
+        }
+
+        if (needsPause)
+        {
+            Time.timeScale = 0f;
+        }
+
+        if (toResume)
+        {
+            Time.timeScale = 1f;
         }
 
         if (panelToOpen != null)
