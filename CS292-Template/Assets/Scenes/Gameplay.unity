@@ -222,6 +222,11 @@ PrefabInstance:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 301655475276764196, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: toResume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 316072192567393391, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
       propertyPath: m_IsActive
@@ -641,6 +646,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2058244582116715607, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: needsPause
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2067604778733200247, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
@@ -1747,6 +1757,11 @@ PrefabInstance:
       propertyPath: currPanel
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6531906796309772389, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: needsPause
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6552806702889339039, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1817,6 +1832,11 @@ PrefabInstance:
       propertyPath: life3
       value: 
       objectReference: {fileID: 1093960480}
+    - target: {fileID: 6913315893182115799, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: toResume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7008065985520698275, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
       propertyPath: m_AspectRatio
@@ -2071,6 +2091,7 @@ PrefabInstance:
     - {fileID: 5073623306813614676, guid: 9dbd1123a17f1564c80983377bb615cf, type: 3}
     - {fileID: 6245670188449163488, guid: 9dbd1123a17f1564c80983377bb615cf, type: 3}
     - {fileID: 4019328554544420137, guid: 9dbd1123a17f1564c80983377bb615cf, type: 3}
+    - {fileID: 4905121440230622155, guid: 9dbd1123a17f1564c80983377bb615cf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9dbd1123a17f1564c80983377bb615cf, type: 3}
 --- !u!114 &462233703 stripped
 MonoBehaviour:
