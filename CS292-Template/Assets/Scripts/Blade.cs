@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class Blade : MonoBehaviour
@@ -61,11 +59,12 @@ public class Blade : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
-		if (col.CompareTag("Chip") || col.CompareTag("Coffee") || col.CompareTag("Soda") || col.CompareTag("Cookie") || 
+		if (col.CompareTag("Chip") || col.CompareTag("Coffee") || col.CompareTag("Soda") || col.CompareTag("Cookie") ||
 			col.CompareTag("Eggs") || col.CompareTag("Noodle") || col.CompareTag("Popsicle") || col.CompareTag("Sandwich"))
 		{
 			itemVal = Food.val;
-			count += itemVal; //potentially col.value?
+			count += itemVal; //potentially col.value?
+
 			endGameScore.text = count.ToString(); //sets the score at the end of the game
 			score.text = count.ToString(); //sets the score in the HUD
 			endGameScore.text = count.ToString();
@@ -74,25 +73,32 @@ public class Blade : MonoBehaviour
 			if (col.CompareTag("Chip"))
 			{
 				chip++;
-			} else if (col.CompareTag("Coffee"))
+			}
+			else if (col.CompareTag("Coffee"))
 			{
 				coffee++;
-			} else if (col.CompareTag("Soda"))
+			}
+			else if (col.CompareTag("Soda"))
 			{
 				soda++;
-			} else if (col.CompareTag("Cookie"))
+			}
+			else if (col.CompareTag("Cookie"))
 			{
 				cookie++;
-			} else if (col.CompareTag("Eggs"))
+			}
+			else if (col.CompareTag("Eggs"))
 			{
 				eggs++;
-			} else if (col.CompareTag("Noodle"))
+			}
+			else if (col.CompareTag("Noodle"))
 			{
 				noodle++;
-			} else if (col.CompareTag("Popsicle"))
+			}
+			else if (col.CompareTag("Popsicle"))
 			{
 				popsicle++;
-			} else if (col.CompareTag("Sandwich"))
+			}
+			else if (col.CompareTag("Sandwich"))
 			{
 				sandwich++;
 			}

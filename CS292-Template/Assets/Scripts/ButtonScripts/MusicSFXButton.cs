@@ -1,25 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MusicSFXButton : MonoBehaviour
 {
     public GameObject panelToOpen;
-    
+
     public void OpenPanel()
     {
-       // print(panelToOpen);
+        // print(panelToOpen);
         print("sfx button pressed");
         if (panelToOpen != null)
         {
             //print(panelToOpen.activeSelf);
-           if (panelToOpen.activeSelf)
+            if (panelToOpen.activeSelf)
             {
-            panelToOpen.SetActive(false);
+                panelToOpen.SetActive(false);
             }
-            else 
+            else
             {
-            panelToOpen.SetActive(true);
+                panelToOpen.SetActive(true);
             }
         }
 

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
@@ -19,7 +17,7 @@ public class Spawner : MonoBehaviour
     private float decBomb = .5f;
 
 
-  
+
     void Update()
     {
         if (timeBtwSpawns <= 0)
@@ -46,7 +44,7 @@ public class Spawner : MonoBehaviour
             Transform randomSpawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
 
             Instantiate(bomb, new Vector3(randomSpawnPoint.position.x, randomSpawnPoint.position.y, 0), randomSpawnPoint.rotation);
-            
+
             if (bombTimeStart > bombTimeMin)
             {
                 bombTimeStart -= decBomb;

@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Button : MonoBehaviour
@@ -17,21 +16,18 @@ public class Button : MonoBehaviour
     public GameObject life1;
     public GameObject life2;
     public GameObject life3;
-    
-    public GameObject spawner;
 
     public AudioSource sliceSound;
     public AudioSource sliceBuildup;
 
-    
-   public void ClosePanel()
+
+    public void ClosePanel()
     {
         currPanel.SetActive(false);
     }
 
     public void Play()
     {
-        print("Play called");
         Blade.chip = 0;
         Blade.coffee = 0;
         Blade.soda = 0;
@@ -42,7 +38,6 @@ public class Button : MonoBehaviour
         Blade.sandwich = 0;
 
         Blade.count = 0;
-        Spawner.startTimeBtwSpawns = 1.1f;
         ResetCounters(); ;
         if (thingToAnimate != null)
         {
@@ -60,20 +55,18 @@ public class Button : MonoBehaviour
 
     IEnumerator PlayAnim()
     {
-            print("PlayAnim called");
-            print(thingToAnimate);
-            //print(thingToAnimate);
-            thingToAnimate.SetActive(true);
-            Animator animator = thingToAnimate.GetComponent<Animator>();
-            if (animator != null)
-            {
-                print(animator);
-                bool isOpen = animator.GetBool("Open");
-                animator.SetBool("Open", !isOpen);
+        //print(thingToAnimate);
+        thingToAnimate.SetActive(true);
+        Animator animator = thingToAnimate.GetComponent<Animator>();
+        if (animator != null)
+        {
+            print(animator);
+            bool isOpen = animator.GetBool("Open");
+            animator.SetBool("Open", !isOpen);
 
 
         }
-        
+
         //this is for slowing down the code, so that the animation
         //is able to play before the rest of the code executes
         //also has breaks for the sound effects
@@ -85,8 +78,8 @@ public class Button : MonoBehaviour
         sliceSound = thingToAnimate.GetComponent<AudioSource>();
         sliceSound.Play();
         yield return new WaitForSeconds(1.6f);
-        
-        
+
+
         thingToAnimate.SetActive(false);
         OpenPanel();
     }
@@ -121,17 +114,18 @@ public class Button : MonoBehaviour
                         anim.SetTrigger("fromPlay");
                     }
                 }
-                
+
             }
-           
-    }
-        ClosePanel(); 
+
+        }
+        ClosePanel();
 
     }
 
 
     public void ResetCounters()
     {
+        Spawner2.numItems = 0;
         life1.SetActive(true);
         life2.SetActive(true);
         life3.SetActive(true);
