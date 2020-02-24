@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class EndGame : MonoBehaviour
@@ -22,7 +20,7 @@ public class EndGame : MonoBehaviour
         {
             Destroy(col.gameObject);
             OpenPanel();
-        } 
+        }
     }
 
     public void OpenPanel()
@@ -34,7 +32,7 @@ public class EndGame : MonoBehaviour
         currPanel.SetActive(false);
     }
 
-   
+
 
     // Update is called once per frame
 
