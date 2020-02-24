@@ -8,7 +8,7 @@ public class Spawner2 : MonoBehaviour
     public GameObject[] items;
     public GameObject bomb;
 
-    private int count;
+    private int count = -60;
     private int spawnTime = 30;
     private int[] spawnTimes = { 0, 5, 10, 20, 30, 30, 30, 30, 60, 80 };
 

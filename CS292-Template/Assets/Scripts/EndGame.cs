@@ -34,10 +34,7 @@ public class EndGame : MonoBehaviour
         currPanel.SetActive(false);
     }
 
-    void Start()
-    {
-        
-    }
+   
 
     // Update is called once per frame
 
