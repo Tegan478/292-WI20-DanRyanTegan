@@ -674,12 +674,12 @@ PrefabInstance:
     - target: {fileID: 2142801129805325648, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.00090009003
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2142801129805325648, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.00090009003
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2142801129805325648, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
@@ -961,6 +961,11 @@ PrefabInstance:
       propertyPath: panelToOpen
       value: 
       objectReference: {fileID: 1919669015}
+    - target: {fileID: 3198381601354951736, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3257346304866868426, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
       propertyPath: m_Color.r
@@ -1069,7 +1074,7 @@ PrefabInstance:
     - target: {fileID: 3620280129941924016, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.00090009003
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3620280129941924016, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
@@ -1734,12 +1739,12 @@ PrefabInstance:
     - target: {fileID: 6073251382814097568, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6073251382814097568, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6073251382814097568, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
@@ -1981,6 +1986,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7320223701746239944, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7399522459147334177, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
       propertyPath: m_IsActive
@@ -2189,7 +2199,7 @@ PrefabInstance:
     - target: {fileID: 8919825644427480384, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8919825644427480384, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
