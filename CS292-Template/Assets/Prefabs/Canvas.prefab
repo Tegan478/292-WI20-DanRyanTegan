@@ -630,6 +630,11 @@ PrefabInstance:
       propertyPath: panelToOpen
       value: 
       objectReference: {fileID: 2499832168952189653}
+    - target: {fileID: 4902664690401922329, guid: ba31b5e58c73b79409f37a24f10b32fe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4945370242676233298, guid: ba31b5e58c73b79409f37a24f10b32fe,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
