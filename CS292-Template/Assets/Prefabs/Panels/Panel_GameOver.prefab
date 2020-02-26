@@ -856,12 +856,12 @@ PrefabInstance:
     - target: {fileID: 2169810275286043447, guid: 2a821b0cd7acc514093e2a96fd3b1666,
         type: 3}
       propertyPath: m_Text
-      value: 'Cookies:'
+      value: 'Candy:'
       objectReference: {fileID: 0}
     - target: {fileID: 8831443650440729209, guid: 2a821b0cd7acc514093e2a96fd3b1666,
         type: 3}
       propertyPath: m_Name
-      value: Cookie
+      value: Candy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a821b0cd7acc514093e2a96fd3b1666, type: 3}

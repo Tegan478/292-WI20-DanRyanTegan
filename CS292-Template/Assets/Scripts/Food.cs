@@ -36,14 +36,4 @@ public class Food : MonoBehaviour
             Destroy(slicedFruit, 3f);
         }
     }
-
-    /*
-    public void OnCollisionEnter(Collider2D col)
-    {
-        if (col.CompareTag("Bomb"))
-        {
-            Physics.IgnoreCollision(col.GetComponent<Collider>(), GetComponent<Collider>());
-        }
-    }
-    */
 }

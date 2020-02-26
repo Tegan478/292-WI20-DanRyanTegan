@@ -24,7 +24,7 @@ public class ScoreControl : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Chip") || col.CompareTag("Coffee") || col.CompareTag("Soda") || col.CompareTag("Cookie") ||
+        if (col.CompareTag("Chip") || col.CompareTag("Coffee") || col.CompareTag("Soda") || col.CompareTag("Candy") ||
             col.CompareTag("Eggs") || col.CompareTag("Noodle") || col.CompareTag("Popsicle") || col.CompareTag("Sandwich"))
         {
             Destroy(col.gameObject);
