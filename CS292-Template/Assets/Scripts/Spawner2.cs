@@ -25,7 +25,9 @@ public class Spawner2 : MonoBehaviour
 
     private ArrayList spawnTimesList = new ArrayList(spawnTimes);
 
-
+    float bombfreq = 7f;
+    float track = 0f;
+    float minusby = 1f;
 
     private void Start()
     {
@@ -37,7 +39,7 @@ public class Spawner2 : MonoBehaviour
 
         if (numItems % 10 == 0)
         {
-            print("numItems is divisible by 10");
+            //print("numItems is divisible by 10");
             numItems++;
             spawnTimesList.Add(randomTimes[Random.Range(0, randomTimes.Length)]);
         }
@@ -66,6 +68,38 @@ public class Spawner2 : MonoBehaviour
             }
 
             count = 0;
+        }
+
+        if (track <= 0)
+        {
+            Transform randomSpawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+            Instantiate(bomb, new Vector3(randomSpawnPoint.position.x, randomSpawnPoint.position.y, 0), randomSpawnPoint.rotation);
+            track = bombfreq;
+        } else
+        {
+            track -= minusby;
+        }
+
+        if (Blade.count < 10)
+        {
+            bombfreq = 7f;
+            minusby = 1f;
+        } else if (Blade.count < 20)
+        {
+            bombfreq = 5f;
+            minusby = 1f;
+        } else if (Blade.count < 30)
+        {
+            minusby = .7f;
+        }
+        else if (Blade.count < 40)
+        {
+            bombfreq = 4.3f;
+            minusby = .7f;
+        } else
+        {
+            bombfreq = 1f;
+            minusby = 1f;
         }
     }
 

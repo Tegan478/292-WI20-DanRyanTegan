@@ -37,6 +37,7 @@ public class Food : MonoBehaviour
         }
     }
 
+    /*
     public void OnCollisionEnter(Collider2D col)
     {
         if (col.CompareTag("Bomb"))
@@ -44,4 +45,5 @@ public class Food : MonoBehaviour
             Physics.IgnoreCollision(col.GetComponent<Collider>(), GetComponent<Collider>());
         }
     }
+    */
 }
