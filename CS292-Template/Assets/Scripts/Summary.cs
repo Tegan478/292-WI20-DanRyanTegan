@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class Summary : MonoBehaviour
@@ -17,7 +15,7 @@ public class Summary : MonoBehaviour
     public Text sandwich;
     void Start()
     {
-        
+
     }
 
     public void setSumm()
