@@ -600,6 +600,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -144
       objectReference: {fileID: 0}
+    - target: {fileID: 1773313033801538658, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: items.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1773313033801538658, guid: 9dbd1123a17f1564c80983377bb615cf,
+        type: 3}
+      propertyPath: bomb
+      value: 
+      objectReference: {fileID: 1917597342697127866, guid: 1280c4a565277d54e847d9097c1b2dff,
+        type: 3}
     - target: {fileID: 1775000523552142185, guid: 9dbd1123a17f1564c80983377bb615cf,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
