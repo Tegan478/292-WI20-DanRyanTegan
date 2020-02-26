@@ -1,5 +1,84 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &439587926910970693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9096101136900150510}
+  - component: {fileID: 4247095186471578761}
+  - component: {fileID: 5534347083156294794}
+  m_Layer: 5
+  m_Name: Text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &9096101136900150510
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439587926910970693}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9125, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4602626149877887426}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 29, y: 38.6}
+  m_SizeDelta: {x: 258.8, y: 45.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4247095186471578761
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439587926910970693}
+  m_CullTransparentMesh: 0
+--- !u!114 &5534347083156294794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439587926910970693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 23af6e728e5f3684fbe5e6e343ad60d0, type: 3}
+    m_FontSize: 11
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'C-Store Ninja was made by Tegan Doherty,
+
+    Dan Briggs, and Ryan Earles'
 --- !u!1 &4602626149877887429
 GameObject:
   m_ObjectHideFlags: 0
@@ -17,7 +96,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4602626149877887426
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30,6 +109,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2469243194315580566}
+  - {fileID: 3260671251589267002}
+  - {fileID: 9096101136900150510}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -59,7 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -74,6 +155,85 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &6340246520527905197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3260671251589267002}
+  - component: {fileID: 9162796960386005128}
+  - component: {fileID: 6405056293348789835}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3260671251589267002
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6340246520527905197}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.75454193, y: 0.83838, z: 0.83838}
+  m_Children: []
+  m_Father: {fileID: 4602626149877887426}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 47, y: -41}
+  m_SizeDelta: {x: 366.3, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &9162796960386005128
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6340246520527905197}
+  m_CullTransparentMesh: 0
+--- !u!114 &6405056293348789835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6340246520527905197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 23af6e728e5f3684fbe5e6e343ad60d0, type: 3}
+    m_FontSize: 11
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Art:\n\"Potato chips\", \"Cookie\", \"Noodle\", and \"Eggs\" \nby pngimg
+    are licensed under 4.0 BY-NC\r\n\n\"DSC03726\"\nby Deathbob is licensed under
+    CC BY-SA 2.0\r\n"
 --- !u!1001 &215429838284501929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -144,22 +304,22 @@ PrefabInstance:
     - target: {fileID: 2358161971562190655, guid: e57ea6cd86bf48d49af8fa4d5509a97c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -111
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 2358161971562190655, guid: e57ea6cd86bf48d49af8fa4d5509a97c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 95
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 2358161971562190655, guid: e57ea6cd86bf48d49af8fa4d5509a97c,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 897
+      value: 591
       objectReference: {fileID: 0}
     - target: {fileID: 2358161971562190655, guid: e57ea6cd86bf48d49af8fa4d5509a97c,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 830
+      value: 824
       objectReference: {fileID: 0}
     - target: {fileID: 2358161971562190655, guid: e57ea6cd86bf48d49af8fa4d5509a97c,
         type: 3}
@@ -191,6 +351,27 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2358161971562190655, guid: e57ea6cd86bf48d49af8fa4d5509a97c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.50832665
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358161971562190655, guid: e57ea6cd86bf48d49af8fa4d5509a97c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.23642
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358161971562190655, guid: e57ea6cd86bf48d49af8fa4d5509a97c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.23642
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804039066580552964, guid: e57ea6cd86bf48d49af8fa4d5509a97c,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3a67eb7f3af61254997b2645da3c63a5,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e57ea6cd86bf48d49af8fa4d5509a97c, type: 3}
 --- !u!224 &2469243194315580566 stripped
