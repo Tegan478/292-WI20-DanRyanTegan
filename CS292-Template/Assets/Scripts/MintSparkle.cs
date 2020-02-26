@@ -18,13 +18,6 @@ public class MintSparkle : MonoBehaviour
         rb.AddForce(transform.up * Food.bombforce, ForceMode2D.Impulse);
     }
 
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.CompareTag("Blade"))
-        {
-            Destroy(mintspark, 3f);
-        }
-    }
     // Update is called once per frame
     void Update()
     {

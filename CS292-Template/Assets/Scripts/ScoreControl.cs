@@ -44,6 +44,10 @@ public class ScoreControl : MonoBehaviour
                 life1.SetActive(false);
             }
         }
+        if (col.CompareTag("Bomb"))
+        {
+            Destroy(col.gameObject);
+        }
     }
 
     public void OpenPanel()
