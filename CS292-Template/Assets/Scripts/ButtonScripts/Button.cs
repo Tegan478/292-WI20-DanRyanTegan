@@ -106,7 +106,7 @@ public class Button : MonoBehaviour
             {
                 if (nextAnimate != null)
                 {
-                    //nextAnimate.SetActive(true);
+                    nextAnimate.SetActive(true);
                     Animator anim = nextAnimate.GetComponent<Animator>();
                     if (anim != null)
                     {
