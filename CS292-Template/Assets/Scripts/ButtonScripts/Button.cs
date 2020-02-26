@@ -31,7 +31,7 @@ public class Button : MonoBehaviour
         Blade.chip = 0;
         Blade.coffee = 0;
         Blade.soda = 0;
-        Blade.cookie = 0;
+        Blade.candy = 0;
         Blade.popsicle = 0;
         Blade.noodle = 0;
         Blade.eggs = 0;

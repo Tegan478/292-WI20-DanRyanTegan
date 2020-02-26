@@ -23,7 +23,7 @@ public class Summary : MonoBehaviour
         chip.text = Blade.chip.ToString();
         coffee.text = Blade.coffee.ToString();
         soda.text = Blade.soda.ToString();
-        cookie.text = Blade.cookie.ToString();
+        cookie.text = Blade.candy.ToString();
         eggs.text = Blade.eggs.ToString();
         noodle.text = Blade.noodle.ToString();
         popsicle.text = Blade.popsicle.ToString();

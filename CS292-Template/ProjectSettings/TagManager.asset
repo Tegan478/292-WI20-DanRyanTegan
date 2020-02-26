@@ -11,11 +11,13 @@ TagManager:
   - Chip
   - Coffee
   - Soda
-  - Cookie
   - Eggs
   - Noodle
   - Popsicle
   - Sandwich
+  - pause
+  - Candy
+  - Cookie
   layers:
   - Default
   - TransparentFX

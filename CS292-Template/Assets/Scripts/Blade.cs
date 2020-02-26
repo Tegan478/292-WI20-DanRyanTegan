@@ -25,7 +25,7 @@ public class Blade : MonoBehaviour
 	public static int chip = 0;
 	public static int coffee = 0;
 	public static int soda = 0;
-	public static int cookie = 0;
+	public static int candy = 0;
 	public static int eggs = 0;
 	public static int noodle = 0;
 	public static int popsicle = 0;
@@ -59,7 +59,7 @@ public class Blade : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
-		if (col.CompareTag("Chip") || col.CompareTag("Coffee") || col.CompareTag("Soda") || col.CompareTag("Cookie") ||
+		if (col.CompareTag("Chip") || col.CompareTag("Coffee") || col.CompareTag("Soda") || col.CompareTag("Candy") ||
 			col.CompareTag("Eggs") || col.CompareTag("Noodle") || col.CompareTag("Popsicle") || col.CompareTag("Sandwich"))
 		{
 			itemVal = Food.val;
@@ -82,9 +82,9 @@ public class Blade : MonoBehaviour
 			{
 				soda++;
 			}
-			else if (col.CompareTag("Cookie"))
+			else if (col.CompareTag("Candy"))
 			{
-				cookie++;
+				candy++;
 			}
 			else if (col.CompareTag("Eggs"))
 			{
