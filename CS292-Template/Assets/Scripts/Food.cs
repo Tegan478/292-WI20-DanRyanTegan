@@ -8,6 +8,8 @@ public class Food : MonoBehaviour
     private float randomForce;
     public float indval;
 
+    public static float bombforce;
+
     public static float val;
 
     Rigidbody2D rb;
@@ -15,6 +17,7 @@ public class Food : MonoBehaviour
     void Start()
     {
         randomForce = Random.Range(minForce, maxForce);
+        bombforce = randomForce;
         rb = GetComponent<Rigidbody2D>();
         rb.AddForce(transform.up * randomForce, ForceMode2D.Impulse);
         rb.AddTorque(Random.Range(-180, 180));
@@ -31,6 +34,14 @@ public class Food : MonoBehaviour
 
             GameObject slicedFruit = Instantiate(slicedPrefab, transform.position, rotation);
             Destroy(slicedFruit, 3f);
+        }
+    }
+
+    public void OnCollisionEnter(Collider2D col)
+    {
+        if (col.CompareTag("Bomb"))
+        {
+            Physics.IgnoreCollision(col.GetComponent<Collider>(), GetComponent<Collider>());
         }
     }
 }
