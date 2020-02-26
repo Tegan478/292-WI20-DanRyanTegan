@@ -47,6 +47,10 @@ public class Spawner2 : MonoBehaviour
             Transform randomSpawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
             GameObject randomItem = items[Random.Range(0, items.Length)];
 
+            //testingbomb
+            //Instantiate(bomb, new Vector3(randomSpawnPoint.position.x, randomSpawnPoint.position.y, 0), randomSpawnPoint.rotation);
+
+
             Instantiate(randomItem, new Vector3(randomSpawnPoint.position.x, randomSpawnPoint.position.y, 0), randomSpawnPoint.rotation);
             numItems++;
             inWave++;
