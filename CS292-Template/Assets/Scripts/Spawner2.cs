@@ -25,8 +25,8 @@ public class Spawner2 : MonoBehaviour
 
     private ArrayList spawnTimesList = new ArrayList(spawnTimes);
 
-    float bombfreq = 7f;
-    float track = 0f;
+    float bombfreq = 340f;
+    float track = 340f;
     float minusby = 1f;
 
     private void Start()
@@ -82,24 +82,27 @@ public class Spawner2 : MonoBehaviour
 
         if (Blade.count < 10)
         {
-            bombfreq = 7f;
+            bombfreq = 300f;
             minusby = 1f;
         } else if (Blade.count < 20)
         {
-            bombfreq = 5f;
-            minusby = 1f;
+            bombfreq = 270f;
         } else if (Blade.count < 30)
         {
-            minusby = .7f;
+            bombfreq = 220f;
         }
         else if (Blade.count < 40)
         {
-            bombfreq = 4.3f;
-            minusby = .7f;
-        } else
+            bombfreq = 170f;
+
+        }
+        else if (Blade.count < 50)
         {
-            bombfreq = 1f;
-            minusby = 1f;
+            bombfreq = 140f;
+        }
+        else
+        {
+            bombfreq = 130f;
         }
     }
 

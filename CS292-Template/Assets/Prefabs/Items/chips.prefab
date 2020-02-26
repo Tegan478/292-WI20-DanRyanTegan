@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2340205009080827151}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -44.585, y: -61.247, z: 0}
-  m_LocalScale: {x: 0.14185984, y: 0.14185984, z: 0.14185984}
+  m_LocalPosition: {x: -44.58, y: -61.24, z: 0}
+  m_LocalScale: {x: 0.14271101, y: 0.14271101, z: 0.14271101}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -99,7 +99,6 @@ MonoBehaviour:
   slicedPrefab: {fileID: 1563661970076588175, guid: 47fbd400d2c47af47a647393a8410c6a,
     type: 3}
   indval: 1.4
-  source: {fileID: 194849670509398711, guid: 559951535dc5044f38a9f532219c7006, type: 3}
 --- !u!50 &58864417074297237
 Rigidbody2D:
   serializedVersion: 4
