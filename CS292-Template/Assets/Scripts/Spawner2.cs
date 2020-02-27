@@ -59,7 +59,7 @@ public class Spawner2 : MonoBehaviour
             print(numItems);
             if (numItems <= firstTimes.Length)
             {
-                spawnTime = firstTimes[numItems - 1];
+                spawnTime = firstTimes[numItems - 2];
 
             }
             else
