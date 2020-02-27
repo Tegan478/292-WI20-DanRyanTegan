@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 938305031366743911}
   - component: {fileID: 5046086929351452936}
+  - component: {fileID: 6973102248281216734}
   - component: {fileID: 6578717806498960070}
   - component: {fileID: 1198844172878132144}
   - component: {fileID: 1577110997968587205}
@@ -49,6 +50,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5043144719564924971}
   m_CullTransparentMesh: 0
+--- !u!114 &6973102248281216734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5043144719564924971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d25bdfe54732b41dcb8621109dbfd2d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelToOpen: {fileID: 0}
 --- !u!114 &6578717806498960070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,14 +192,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bba4752a8873a448b7fe7814e8dfeb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelToOpen: {fileID: 0}
   thingToAnimate: {fileID: 0}
+  nextAnimate: {fileID: 0}
+  panelToOpen: {fileID: 0}
   currPanel: {fileID: 0}
   isPlay: 0
+  needsPause: 0
+  toResume: 0
   life1: {fileID: 0}
   life2: {fileID: 0}
   life3: {fileID: 0}
-  spawner: {fileID: 0}
+  sliceSound: {fileID: 0}
+  sliceBuildup: {fileID: 0}
 --- !u!1 &5502914167919448655
 GameObject:
   m_ObjectHideFlags: 0
