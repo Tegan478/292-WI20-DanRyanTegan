@@ -18,7 +18,7 @@ public class Spawner2 : MonoBehaviour
 
     private int[] firstTimes = { 120, 120, 120, 60, 0, 120, 60, 60, 60, 0, 0, 120, 90, 0, 0, 0, 120 };
     private static int[] spawnTimes = { 0, 30, 30, 30, 30, 60, 90 };
-    private int[] randomTimes = { 0, 0, 0, 0, 15, 30, 60 };
+    private int[] randomTimes = { 0, 0, 15, 30, 60 };
     private int[] perWaveChance = { 1, 2, 3, 4, 4, 5, 5, 5, 6, 6 };
 
     private int[] waveTimes = { 0, 60, 60, 60, 90, 90 };
@@ -64,7 +64,13 @@ public class Spawner2 : MonoBehaviour
             }
             else
             {
-                spawnTime = (int)spawnTimesList[Random.Range(0, spawnTimesList.Count)];
+                if (numItems % 7 == 0)
+                {
+                    //print("div by 7");
+                    spawnTime = 120;
+                }
+                else
+                    spawnTime = (int)spawnTimesList[Random.Range(0, spawnTimesList.Count)];
             }
 
             count = 0;
