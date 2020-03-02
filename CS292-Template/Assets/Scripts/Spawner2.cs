@@ -8,20 +8,14 @@ public class Spawner2 : MonoBehaviour
     public GameObject bomb;
 
     private int count = 0;
-    private int wCount = 0;
-    private int inWave = 0;
+
     public static int numItems = 0;
 
     private int spawnTime = 120;
-    private int waveTime = 120;
-    private int perWave = 0;
 
     private int[] firstTimes = { 120, 120, 120, 60, 0, 120, 60, 60, 60, 0, 0, 120, 90, 0, 0, 0, 120 };
     private static int[] spawnTimes = { 0, 30, 30, 30, 30, 60, 90 };
-    private int[] randomTimes = { 0, 0, 15, 30, 60 };
-    private int[] perWaveChance = { 1, 2, 3, 4, 4, 5, 5, 5, 6, 6 };
-
-    private int[] waveTimes = { 0, 60, 60, 60, 90, 90 };
+    private int[] randomTimes = { 0, 0, 15, 30 };
 
     private ArrayList spawnTimesList = new ArrayList(spawnTimes);
 
@@ -55,9 +49,8 @@ public class Spawner2 : MonoBehaviour
 
             Instantiate(randomItem, new Vector3(randomSpawnPoint.position.x, randomSpawnPoint.position.y, 0), randomSpawnPoint.rotation);
             numItems++;
-            inWave++;
             print(numItems);
-            if (numItems <= firstTimes.Length)
+            if (numItems <= firstTimes.Length+1)
             {
                 spawnTime = firstTimes[numItems - 2];
 

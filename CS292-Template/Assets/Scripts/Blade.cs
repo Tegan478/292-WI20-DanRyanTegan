@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class Blade : MonoBehaviour
@@ -64,7 +65,7 @@ public class Blade : MonoBehaviour
 		{
 			itemVal = Food.val;
 			count += itemVal; //potentially col.value?
-
+			count = (float) Math.Round(count, 2);
 			endGameScore.text = count.ToString(); //sets the score at the end of the game
 			score.text = count.ToString(); //sets the score in the HUD
 			endGameScore.text = count.ToString();
