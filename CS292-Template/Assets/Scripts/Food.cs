@@ -3,8 +3,8 @@
 public class Food : MonoBehaviour
 {
     public GameObject slicedPrefab;
-    private float minForce = 17f;
-    private float maxForce = 17f;
+    private float minForce = 11f;
+    private float maxForce = 13f;
     private float randomForce;
     public float indval;
 
@@ -20,6 +20,7 @@ public class Food : MonoBehaviour
         bombforce = randomForce;
         rb = GetComponent<Rigidbody2D>();
         rb.AddForce(transform.up * randomForce, ForceMode2D.Impulse);
+        //rb.AddForce(transform.up * 10.5f, ForceMode2D.Impulse);
         rb.AddTorque(Random.Range(-180, 180));
     }
 
